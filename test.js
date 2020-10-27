@@ -9,6 +9,15 @@ $.getJSON( "text.json", function( json ) {
     //console.log( "JSON Data received: " + JSON.stringify(lore));
 });
 
+// currently import does not work, so I put it here
+lore = [
+  {"source": "SE final", "info": "Bakak serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
+  {"source": "WP final", "info": "Bakak is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
+  {"source": "TV discovery", "info": "THe Olm built Tv", "tags":  ["Olm", "Time Valley", "Discovery"]},
+  {"source": "SE final", "info": "Bakak serves Dern", "tags":  ["Bakal", "Dern", "Discovery"]}
+]
+
+
 function getLS() {
     let search_tags = document.getElementById('tags').value
     console.log(search_tags);
