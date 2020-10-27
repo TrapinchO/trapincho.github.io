@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>WynnLore database</title>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="wynnLore.js"></script>
+	<link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+<h1><b>Database of lore sources for Wynncraft</b></h1>
+	<h2><a href="https://github.com/TrapinchO/trapincho.github.io">Github repository page</a></h2><br>
+
+	<h2><u><b>How to use it:</b></u></h2>
+	<p><b>If you know the name of the entry: </b>Type it in the "name" field and click "search"</p>
+	<p><b>If you do not know the name of the entry but know topic: </b> type the tags into "tags" text field and click "search"</p>
+	<p><b>If you know nothing: </b> click "show all"</p>
+
+	<br><br>
+	Name: <input type="text" id="search_name"> <br>
+	Tags: <input type="text" id="search_tags"> (separate by spaces) <br>
+	<button onclick="getLS()">search</button>
+	<button onclick="showAll()">show all</button>
+
+	<p id="found"></p>
+
+
+	<table id="entries">
+		<tr>
+			<td><b>Name</b></td>
+			<td><b>Source</b></td>
+			<td><b>Info</b></td>
+			<td><b>Tags</b></td>
+		</tr>
+	</table>
+</body>
+
+</html>

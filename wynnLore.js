@@ -1,9 +1,6 @@
-// still in alpha phase
-//alert("WARNING: This page is still under construction!");
 
 //get the json from file text.json
 var lore;
-
 /*
 $.getJSON( "text.json", function( json ) {
     lore = json;
@@ -27,29 +24,28 @@ function getLS() {
     // get the table
     var table = document.getElementById("entries");
 
-    while (table.rows.length > 1) {
-        table.deleteRow(1);
-    }
+    // reset from previous searches
+    document.getElementById('found').innerHTML = "";
+    while (table.rows.length > 1) { table.deleteRow(1); }
 
     // search by name
     var search_name = document.getElementById('search_name').value;
     // search by tags
     var search_tags = document.getElementById('search_tags').value;
 
-    // if all empty return
+    // if all empty -> return
     if (!search_tags && !search_name) {
         console.log(search_name);
         document.getElementById('found').innerHTML = "Search boxes are empty";
         return;
     }
-    // if name not empty
+    // if name not empty -> search name
     // name search has higher priority
     else if (search_name) {
         for (info in lore) {
             if (!lore[info]["name"].localeCompare(search_name)) {
                 // put it into table
                 var rowCount = 1;
-                console.log(rowCount);
                 var row = table.insertRow(rowCount);
                 row.insertCell(0).innerHTML = lore[info]["name"];
                 row.insertCell(1).innerHTML = lore[info]["source"];
