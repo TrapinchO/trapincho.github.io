@@ -19,10 +19,10 @@ lore = [
 
 
 function getLS() {
-    let search_name = document.getElementById('search_name').value
+    var search_name = document.getElementById('search_name').value
 
     // search by tags
-    let search_tags = document.getElementById('search_tags').value // get tags
+    var search_tags = document.getElementById('search_tags').value // get tags
     console.log(search_tags);
     if (!search_tags) {
         // if empty return
@@ -34,7 +34,7 @@ function getLS() {
     console.log(search_tags);
 
 
-    let ls = ""; // final string
+    var ls = ""; // final string
 
     for (info in lore) {
         info = lore[info]; // gets the object
