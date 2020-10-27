@@ -4,7 +4,7 @@ var lore;
 
 $.getJSON( "text.json", function( json ) {
     lore = json;
-    console.log( "JSON Data received: " + JSON.stringify(lore));
+    //console.log( "JSON Data received: " + JSON.stringify(lore));
 });
 
 
