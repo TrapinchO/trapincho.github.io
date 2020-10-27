@@ -1,13 +1,13 @@
 
 //get the json from file text.json
 var lore;
-/*
+
 $.getJSON( "text.json", function( json ) {
     lore = json;
     //console.log( "JSON Data received: " + JSON.stringify(lore));
 });
-*/
 
+/*
 // currently import does not work, so I put it here
 lore = [
   {"name": "BakalDern", "source": "SE final", "info": "Bakal serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
@@ -18,7 +18,7 @@ lore = [
   {"name": "CorruptionUndead", "source": "Poisoning the Pest", "info": "Corruption rises the undead", "tags": ["Corruption", "Undead"]},
   {"name": "FrumaRecruit", "source": "A Kings Recruit", "info": "Player is recruit from Fruma", "tags": ["Fruma"]}
 ]
-
+*/
 
 function getLS() {
     // get the table
