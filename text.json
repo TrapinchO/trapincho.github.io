@@ -6,5 +6,8 @@
   {"name": "EyeInEO", "source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]},
   {"name": "CorruptionOrigin", "source": "WynnExcavation Site D", "info": "Corruption is created by mix of Light and Dark.", "tags": ["Corruption", "Light", "Dern", "Influence"]},
   {"name": "CorruptionUndead", "source": "Poisoning the Pest", "info": "Corruption rises the undead", "tags": ["Corruption", "Undead"]},
-  {"name": "FrumaRecruit", "source": "A Kings Recruit", "info": "Player is recruit from Fruma", "tags": ["Fruma"]}
+  {"name": "FrumaRecruit", "source": "A Kings Recruit", "info": "Player is recruit from Fruma", "tags": ["Fruma"]},
+  {"name": "FrumaCriminal", "source": "Recover the Past", "info": "You are a criminal", "tags": ["Fruma", "Queest"]},
+  {"name": "FrumaCriminal", "source": "Recover the Past", "info": "There is no wall withing Fruma walls", "tags": ["Fruma", "Queest", "Meme"]}
+
 ]
