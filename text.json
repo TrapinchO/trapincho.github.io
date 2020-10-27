@@ -1,7 +1,7 @@
 
 [
-  {"source": "SE final", "info": "Bakak serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
-  {"source": "WP final", "info": "Bakak is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
-  {"source": "TV discovery", "info": "The Olm built Time Valley", "tags":  ["Olm", "Time Valley", "Discovery"]},
-  {"source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]}
+  {"name": "BakalDern", "source": "SE final", "info": "Bakal serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
+  {"name": "BakalGone", "source": "WP final", "info": "Bakal is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
+  {"name": "OlmBuild", "source": "TV discovery", "info": "The Olm built Time Valley", "tags":  ["Olm", "Time Valley", "Discovery"]},
+  {"name": "EyeInEO", "source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]}
 ]

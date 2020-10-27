@@ -11,25 +11,35 @@ $.getJSON( "text.json", function( json ) {
 
 // currently import does not work, so I put it here
 lore = [
-  {"source": "SE final", "info": "Bakak serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
-  {"source": "WP final", "info": "Bakak is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
-  {"source": "TV discovery", "info": "THe Olm built Tv", "tags":  ["Olm", "Time_Valley", "Discovery"]},
-  {"source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]}
+  {"name": "BakalDern", "source": "SE final", "info": "Bakal serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
+  {"name": "BakalGone", "source": "WP final", "info": "Bakal is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
+  {"name": "OlmBuild", "source": "TV discovery", "info": "The Olm built Time Valley", "tags":  ["Olm", "Time Valley", "Discovery"]},
+  {"name": "EyeInEO", "source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]}
 ]
 
 
 function getLS() {
+    // search by name
     var search_name = document.getElementById('search_name').value
-
     // search by tags
     var search_tags = document.getElementById('search_tags').value // get tags
     console.log(search_tags);
-    if (!search_tags) {
-        // if empty return
-        document.getElementById('found').innerHTML = "Tag search text box is empty";
-        console.log("EMPTY");
+    // if all empty return
+    if (!search_tags && !search_name) {
+        document.getElementById('found').innerHTML = "Search boxes are empty";
         return;
+    // if name not empty
+    // name search has higher priority
+    } else if (search_name) {
+        for (info in lore) {
+            if (!lore[info]["name"].localeCompare(search_name)) {
+                console.log(search_name + "--" + lore[info]["name"]);
+                document.getElementById('found').innerHTML = "Entry:<br>" + JSON.stringify(lore[info]);
+                return;
+            }
+        }
     }
+
     search_tags = search_tags.split(" "); // make it an array
     console.log(search_tags);
 
@@ -56,7 +66,6 @@ function getLS() {
         }
     }
     if (!ls) {
-        console.log("NOT FOUND");
         document.getElementById('found').innerHTML = "No entries found";
     }
     else { document.getElementById('found').innerHTML = "Entries:"+ls; }
