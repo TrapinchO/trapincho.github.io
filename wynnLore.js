@@ -94,7 +94,14 @@ function getLS() {
 
 
 function showAll() {
+    // get table
     var table = document.getElementById("myTable");
+
+    // reset
+    var table = document.getElementById("");
+    while (table.rows.length > 1) { table.deleteRow(1); }
+
+    // put info on table
     for (info in lore) {
         info = lore[info];
         var rowCount = table.rows.length;
