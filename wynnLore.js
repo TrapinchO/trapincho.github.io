@@ -4,12 +4,12 @@
 //get the json from file text.json
 var lore;
 
-
+/*
 $.getJSON( "text.json", function( json ) {
     lore = json;
     //console.log( "JSON Data received: " + JSON.stringify(lore));
 });
-
+*/
 
 // currently import does not work, so I put it here
 lore = [
@@ -25,7 +25,7 @@ lore = [
 
 function getLS() {
     // get the table
-    var table = document.getElementById("myTable");
+    var table = document.getElementById("entries");
 
     while (table.rows.length > 1) {
         table.deleteRow(1);
@@ -95,10 +95,10 @@ function getLS() {
 
 function showAll() {
     // get table
-    var table = document.getElementById("myTable");
+    var table = document.getElementById("entries");
 
     // reset
-    var table = document.getElementById("");
+    document.getElementById('found').innerHTML = "";
     while (table.rows.length > 1) { table.deleteRow(1); }
 
     // put info on table
