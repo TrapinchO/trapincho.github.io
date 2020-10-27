@@ -13,8 +13,8 @@ $.getJSON( "text.json", function( json ) {
 lore = [
   {"source": "SE final", "info": "Bakak serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
   {"source": "WP final", "info": "Bakak is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
-  {"source": "TV discovery", "info": "THe Olm built Tv", "tags":  ["Olm", "Time Valley", "Discovery"]},
-  {"source": "SE final", "info": "Bakak serves Dern", "tags":  ["Bakal", "Dern", "Discovery"]}
+  {"source": "TV discovery", "info": "THe Olm built Tv", "tags":  ["Olm", "Time_Valley", "Discovery"]},
+  {"source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]}
 ]
 
 
