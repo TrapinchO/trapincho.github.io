@@ -19,31 +19,45 @@ lore = [
 
 
 function getLS() {
-    let search_tags = document.getElementById('tags').value
+    let search_name = document.getElementById('search_name').value
+
+    // search by tags
+    let search_tags = document.getElementById('search_tags').value // get tags
     console.log(search_tags);
-    if (!search_tags) {console.log("EMPTY"); return;}
-    search_tags = search_tags.split(" ");
+    if (!search_tags) {
+        // if empty return
+        document.getElementById('found').innerHTML = "Tag search text box is empty";
+        console.log("EMPTY");
+        return;
+    }
+    search_tags = search_tags.split(" "); // make it an array
     console.log(search_tags);
 
 
-    var ls = "";
-    let found = true;
+    let ls = ""; // final string
+
     for (info in lore) {
-        info = lore[info];
+        info = lore[info]; // gets the object
 
         for (tag in search_tags) {
-            tag = search_tags[tag];
+            var found = true;
+            tag = search_tags[tag]; // gets the tag - string
 
+            // if not found break
             if (!info["tags"].includes(tag)) {
                 found = false;
                 break;
             }
-            if (found) {
-                console.log("########## FOUND " + JSON.stringify(info));
-                ls = ls.concat("<br>", JSON.stringify(info));
-            }
+            // else add it to string
+        }
+        if (found) {
+            console.log("########## FOUND " + JSON.stringify(info));
+            ls = ls.concat("<br>", JSON.stringify(info));
         }
     }
-    if (!ls) {console.log("NOT FOUND");}
-    document.getElementById('found').innerHTML = ls;
+    if (!ls) {
+        console.log("NOT FOUND");
+        document.getElementById('found').innerHTML = "No entries found";
+    }
+    else { document.getElementById('found').innerHTML = "Entries:"+ls; }
 }
