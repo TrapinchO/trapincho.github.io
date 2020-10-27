@@ -4,21 +4,9 @@ var lore;
 
 $.getJSON( "text.json", function( json ) {
     lore = json;
-    //console.log( "JSON Data received: " + JSON.stringify(lore));
+    console.log( "JSON Data received: " + JSON.stringify(lore));
 });
 
-/*
-// currently import does not work, so I put it here
-lore = [
-  {"name": "BakalDern", "source": "SE final", "info": "Bakal serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
-  {"name": "BakalGone", "source": "WP final", "info": "Bakal is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
-  {"name": "OlmBuild", "source": "TV discovery", "info": "The Olm built Time Valley", "tags":  ["Olm", "Time Valley", "Discovery"]},
-  {"name": "EyeInEO", "source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]},
-  {"name": "CorruptionOrigin", "source": "WynnExcavation Site D", "info": "Corruption is created by mix of Light and Dark.", "tags": ["Corruption", "Light", "Dern", "Influence"]},
-  {"name": "CorruptionUndead", "source": "Poisoning the Pest", "info": "Corruption rises the undead", "tags": ["Corruption", "Undead"]},
-  {"name": "FrumaRecruit", "source": "A Kings Recruit", "info": "Player is recruit from Fruma", "tags": ["Fruma"]}
-]
-*/
 
 function getLS() {
     // get the table
