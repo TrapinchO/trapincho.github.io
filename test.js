@@ -61,3 +61,11 @@ function getLS() {
     }
     else { document.getElementById('found').innerHTML = "Entries:"+ls; }
 }
+
+function showAll() {
+    var entries = "Entries:";
+    for (info in lore) {
+    entries = entries.concat("<br>" + JSON.stringify(lore[info]));
+    }
+    document.getElementById('found').innerHTML = entries;
+}
