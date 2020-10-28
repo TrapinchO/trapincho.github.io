@@ -2,44 +2,44 @@
 [
 
   {
-    "name": "Llevigar Plains Creeper", "source": "entrance to the cave at -1497 42 -4773, coords on the screenshots",
+    "name": "Llevigar Plains Creeper", "source": "entrance to the cave at coords", "coords": "-1497 42 -4773",
     "info": "Creeper head together with tnt on a cave at llevingar plains", "tags": ["creeper", "cave", "llevigar_plains"]
   },
   {
-    "name": "Ragni Torture Area", "source": "Entrance at -809, 75, -1609",
+    "name": "Ragni Torture Area", "source": "Entrance at coords", "coords": "-809, 75, -1609",
     "info": "A small compound with prison cells, blood, cobwebs, and skull", "tags": ["ragni", "torture", "prison", "hidden"]
   },
   {
-    "name": "Sewer Trap", "source": "-494, -1616",
+    "name": "Sewer Trap", "source": "coords", "coords": "-494, -1616",
     "info": "A trap which leads into sewers with item frames and cells. Exits into a small house off the emerald trail.", "tags": ["emerald_trail", "sewer_trap", "prison"]
   },
   {
-    "name": "Larkster Pirate Cave", "source": "-798, 37, 1966",
+    "name": "Larkster Pirate Cave", "source": "coords", "coords": "-798, 37, 1966",
     "info": " A cave full of neutral and hostile pirates - contains some kind of plan/message board, and an area to watch crabs fight.", "tags": ["cave", "katoa", "pirates"]
   },
   {
-    "name": "Nivla Ritual Site", "source": "-355, -1415",
+    "name": "Nivla Ritual Site", "source": "coords", "coords": "-355, -1415",
     "info": "A glade surrounded by candles, looks ritualistic", "tags": ["nivla", "road_to_time_valley"]
   },
   {
-    "name": "Nivla Rose Tree Circle", "source": "-393, -1500",
+    "name": "Nivla Rose Tree Circle", "source": "coords", "coords": "-393, -1500",
     "info": "A circle of six charred tree stumps around a rose that judging by F3 has an armour stand in/on it", "tags": ["nivla", "rose", "circle"]
   },
   {
-    "name": "Nivla Outskirts Building", "source": " -375, -1370",
+    "name": "Nivla Outskirts Building", "source": "coords", "coords": "-375, -1370",
     "info": " A stone building, not ruined, leading down to a mob-free quartz room.", "tags": ["building", "intact", "nivla"]
   },
   {
-    "name": "Time Valley Crystal Slots", "source": " -574, -1172",
+    "name": "Time Valley Crystal Slots", "source": "coords", "coords": "-574, -1172",
     "info": "Here, on the front of the temple, you can see a large sapphire slot at the centre, three on the left, and two, with one empty slot, on the right.", "tags": ["time_valley", "temple_of_time", "crystals"]
   },
   {
-    "name": "Dark Cultist Cave", "source": "-570, -1352",
+    "name": "Dark Cultist Cave", "source": "coords", "coords": "-570, -1352",
     "info": "A dark cultist cave. A miniboss called the Temporal Horror spawns here and drops dark aura which you need for the dark mask you can get at the ravine village.", "tags": ["cultists", "cave", "time_valley"]
   },
 
   {
-    "name": "", "source": "",
+    "name": "", "source": "", "coords": "",
     "info": "", "tags": []
   }
 

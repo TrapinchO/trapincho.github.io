@@ -88,7 +88,8 @@ function addToTable(info) {
     var row = table.insertRow(rowCount);
     row.insertCell(0).innerHTML = info["name"];
     row.insertCell(1).innerHTML = info["source"];
-    row.insertCell(2).innerHTML = info["info"];
-    row.insertCell(3).innerHTML = info["tags"];
+    row.insertCell(2).innerHTML = info["coords"];
+    row.insertCell(3).innerHTML = info["info"];
+    row.insertCell(4).innerHTML = info["tags"].join("<br>");
     return;
 }
