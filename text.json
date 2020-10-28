@@ -1,13 +1,46 @@
 
 [
-  {"name": "BakalDern", "source": "SE final", "info": "Bakal serves Dern", "tags":  ["Bakal", "Dern", "Discovery", "Final"]},
-  {"name": "BakalGone", "source": "WP final", "info": "Bakal is gone", "tags":  ["Bakal", "Wynn", "Discovery", "Final"]},
-  {"name": "OlmBuild", "source": "TV discovery", "info": "The Olm built Time Valley", "tags":  ["Olm", "Time Valley", "Discovery"]},
-  {"name": "EyeInEO", "source": "SE final", "info": "They Eye is from Dern Beast", "tags":  ["Eye", "EO", "Discovery", "Final"]},
-  {"name": "CorruptionOrigin", "source": "WynnExcavation Site D", "info": "Corruption is created by mix of Light and Dark.", "tags": ["Corruption", "Light", "Dern", "Influence"]},
-  {"name": "CorruptionUndead", "source": "Poisoning the Pest", "info": "Corruption rises the undead", "tags": ["Corruption", "Undead"]},
-  {"name": "FrumaRecruit", "source": "A Kings Recruit", "info": "Player is recruit from Fruma", "tags": ["Fruma"]},
-  {"name": "FrumaCriminal", "source": "Recover the Past", "info": "You are a criminal", "tags": ["Fruma", "Queest"]},
-  {"name": "FrumaCriminal", "source": "Recover the Past", "info": "There is no wall withing Fruma walls", "tags": ["Fruma", "Queest", "Meme"]}
+
+  {
+    "name": "Llevigar Plains Creeper", "source": "entrance to the cave at -1497 42 -4773, coords on the screenshots",
+    "info": "Creeper head together with tnt on a cave at llevingar plains", "tags": ["creeper", "cave", "llevigar_plains"]
+  },
+  {
+    "name": "Ragni Torture Area", "source": "Entrance at -809, 75, -1609",
+    "info": "A small compound with prison cells, blood, cobwebs, and skull", "tags": ["ragni", "torture", "prison", "hidden"]
+  },
+  {
+    "name": "Sewer Trap", "source": "-494, -1616",
+    "info": "A trap which leads into sewers with item frames and cells. Exits into a small house off the emerald trail.", "tags": ["emerald_trail", "sewer_trap", "prison"]
+  },
+  {
+    "name": "Larkster Pirate Cave", "source": "-798, 37, 1966",
+    "info": " A cave full of neutral and hostile pirates - contains some kind of plan/message board, and an area to watch crabs fight.", "tags": ["cave", "katoa", "pirates"]
+  },
+  {
+    "name": "Nivla Ritual Site", "source": "-355, -1415",
+    "info": "A glade surrounded by candles, looks ritualistic", "tags": ["nivla", "road_to_time_valley"]
+  },
+  {
+    "name": "Nivla Rose Tree Circle", "source": "-393, -1500",
+    "info": "A circle of six charred tree stumps around a rose that judging by F3 has an armour stand in/on it", "tags": ["nivla", "rose", "circle"]
+  },
+  {
+    "name": "Nivla Outskirts Building", "source": " -375, -1370",
+    "info": " A stone building, not ruined, leading down to a mob-free quartz room.", "tags": ["building", "intact", "nivla"]
+  },
+  {
+    "name": "Time Valley Crystal Slots", "source": " -574, -1172",
+    "info": "Here, on the front of the temple, you can see a large sapphire slot at the centre, three on the left, and two, with one empty slot, on the right.", "tags": ["time_valley", "temple_of_time", "crystals"]
+  },
+  {
+    "name": "Dark Cultist Cave", "source": "-570, -1352",
+    "info": "A dark cultist cave. A miniboss called the Temporal Horror spawns here and drops dark aura which you need for the dark mask you can get at the ravine village.", "tags": ["cultists", "cave", "time_valley"]
+  },
+
+  {
+    "name": "", "source": "",
+    "info": "", "tags": []
+  }
 
 ]

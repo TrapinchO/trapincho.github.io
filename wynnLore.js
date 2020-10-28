@@ -33,12 +33,7 @@ function getLS() {
         for (info in lore) {
             if (!lore[info]["name"].localeCompare(search_name)) {
                 // put it into table
-                var rowCount = 1;
-                var row = table.insertRow(rowCount);
-                row.insertCell(0).innerHTML = lore[info]["name"];
-                row.insertCell(1).innerHTML = lore[info]["source"];
-                row.insertCell(2).innerHTML = lore[info]["info"];
-                row.insertCell(3).innerHTML = lore[info]["tags"];
+                addToTable(lore[info]);
                 return;
             }
         }
@@ -65,12 +60,7 @@ function getLS() {
         // else add it to string
         if (found) {
             ls = true; // found entry
-            var rowCount = table.rows.length;
-            var row = table.insertRow(rowCount);
-            row.insertCell(0).innerHTML = info["name"];
-            row.insertCell(1).innerHTML = info["source"];
-            row.insertCell(2).innerHTML = info["info"];
-            row.insertCell(3).innerHTML = info["tags"];
+            addToTable(info);
         }
     }
     if (!ls) { document.getElementById('found').innerHTML = "No entries found"; }
@@ -80,7 +70,6 @@ function getLS() {
 function showAll() {
     // get table
     var table = document.getElementById("entries");
-
     // reset
     document.getElementById('found').innerHTML = "";
     while (table.rows.length > 1) { table.deleteRow(1); }
@@ -88,11 +77,18 @@ function showAll() {
     // put info on table
     for (info in lore) {
         info = lore[info];
-        var rowCount = table.rows.length;
-        var row = table.insertRow(rowCount);
-        row.insertCell(0).innerHTML = info["name"];
-        row.insertCell(1).innerHTML = info["source"];
-        row.insertCell(2).innerHTML = info["info"];
-        row.insertCell(3).innerHTML = info["tags"];
+        addToTable(info);
     }
+}
+
+function addToTable(info) {
+    var table = document.getElementById("entries");
+
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+    row.insertCell(0).innerHTML = info["name"];
+    row.insertCell(1).innerHTML = info["source"];
+    row.insertCell(2).innerHTML = info["info"];
+    row.insertCell(3).innerHTML = info["tags"];
+    return;
 }
