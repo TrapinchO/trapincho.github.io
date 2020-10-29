@@ -1,4 +1,4 @@
-alert("WARNING: This page is a prototype. Functionality will be added later")
+//alert("WARNING: This page is a prototype. Functionality will be added later")
 
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -12,11 +12,7 @@ var rotors = {
     6: "QVOWGPINUFMEKBDCJLZXATSYRH"
     };
 
-rotor_pos = {
-    1: 1,
-    2: 1,
-    3: 1
-}
+rotor_pos = [1, 1, 1]
 
 
 function enigma(character) {
@@ -39,20 +35,48 @@ function enigma(character) {
     if (rot3 != 0 && !rot3) { out = out.concat("* Rotor 3: Please enter a valid number<br>"); }
     else if (rot3 < 1 || rot3 > 6) { out = out.concat("* Rotor 3: Please enter valid rotor<br>")}
 
+
     // rotor position
-    var rot_pos1 = parseInt(document.getElementById('rotor_pos1').value);
-    if (!rot_pos1) { out = out.concat("* Rotor position 1: Please enter a valid number<br>"); }
-    else if (rot_pos1 < 1 || rot_pos1 > 26) { out = out.concat("* Rotor position 1: Please enter valid position<br>"); }
-    var rot_pos2 = parseInt(document.getElementById('rotor_pos2').value);
-    if (!rot_pos2) { out = out.concat("* Rotor position 2: Please enter a valid number<br>"); }
-    else if (rot_pos2 < 1 || rot_pos2 > 26) { out = out.concat("* Rotor position 2: Please enter valid position<br>"); }
-    var rot_pos3 = parseInt(document.getElementById('rotor_pos3').value);
-    if (!rot_pos3) { out = out.concat("* Rotor position 3: Please enter a valid number<br>"); }
-    else if (rot_pos3 < 1 || rot_pos2 > 26) { out = out.concat("* Rotor position 3: Please enter valid position<br>"); }
+    rotor_pos[0] = parseInt(document.getElementById('rotor_pos1').value);
+    if (!rotor_pos[0]) { out = out.concat("* Rotor position 1: Please enter a valid number<br>"); }
+    else if (rotor_pos[0] < 1 || rotor_pos[0] > 26) { out = out.concat("* Rotor position 1: Please enter valid position<br>"); }
+
+    rotor_pos[1] = parseInt(document.getElementById('rotor_pos2').value);
+    if (!rotor_pos[1]) { out = out.concat("* Rotor position 2: Please enter a valid number<br>"); }
+    else if (rotor_pos[1] < 1 || rotor_pos[1] > 26) { out = out.concat("* Rotor position 2: Please enter valid position<br>"); }
+
+    rotor_pos[2] = parseInt(document.getElementById('rotor_pos3').value);
+    if (!rotor_pos[2]) { out = out.concat("* Rotor position 3: Please enter a valid number<br>"); }
+    else if (rotor_pos[2] < 1 || rotor_pos[2] > 26) { out = out.concat("* Rotor position 3: Please enter valid position<br>"); }
 
     if (out) {
         document.getElementById('output').innerHTML = "Error:<br>" + out;
         return;
     };
+
+
+    rotor_pos[0]++;
+    document.getElementById('rotor_pos1').value = rotor_pos[0];
+    if (rotor_pos[0] > 26) {
+        console.log("R1: " + rotor_pos[0]);
+        rotor_pos[0] = 1;
+        document.getElementById('rotor_pos1').value = rotor_pos[0];
+        rotor_pos[1]++;
+        document.getElementById('rotor_pos2').value = rotor_pos[1];
+
+        if (rotor_pos[1] > 26) {
+            console.log("R1: " + rotor_pos[1]);
+            rotor_pos[1] = 1;
+            document.getElementById('rotor_pos2').value = rotor_pos[1];
+            rotor_pos[2]++;
+            document.getElementById('rotor_pos3').value = rotor_pos[2];
+
+            if (rotor_pos[2] > 26) {
+                rotor_pos[2] = 1;
+                document.getElementById('rotor_pos3').value = rotor_pos[2];
+            }
+        }
+    }
+
     document.getElementById('output').innerHTML = character;
 }
