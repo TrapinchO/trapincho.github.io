@@ -1,8 +1,7 @@
-
 //get the json from file text.json
 var lore;
 
-$.getJSON( "text.json", function( json ) {
+$.getJSON( "wynn_lore.json", function( json ) {
     lore = json;
     //console.log( "JSON Data received: " + JSON.stringify(lore));
 });

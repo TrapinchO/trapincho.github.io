@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="enigma.js"></script>
+    <link href="enigma.css" rel="stylesheet">
+    <title>Enigma machine</title>
+</head>
+<body>
+    <h1 class="cent">Emulator of the Engima machine from WWII</h1>
+
+    <table border="1" class="center">
+        <tr>
+            <td>rotor 1</td>
+            <td>rotor 2</td>
+            <td>rotor 3</td>
+            <td>rotor 1<br>position</td>
+            <td>rotor 2<br>position</td>
+            <td>rotor 3<br>position</td>
+        </tr>
+        <tr>
+            <th><input type="text" id="rotor1" value="1"></th>
+            <th><input type="text" id="rotor2" value="1"></th>
+            <th><input type="text" id="rotor3" value="1"></th>
+            <th><input type="text" id="rotor_pos1" value="1"></th>
+            <th><input type="text" id="rotor_pos2" value="2"></th>
+            <th><input type="text" id="rotor_pos3" value="3"></th>
+        </tr>
+    </table>
+    <br>
+    <table class="center">
+        <tr>
+            <th><button onclick="enigma('Q')">Q</button></th>
+            <th><button onclick="enigma('W')">W</button></th>
+            <th><button onclick="enigma('E')">E</button></th>
+            <th><button onclick="enigma('R')">R</button></th>
+            <th><button onclick="enigma('T')">T</button></th>
+            <th><button onclick="enigma('Y')">Y</button></th>
+            <th><button onclick="enigma('U')">U</button></th>
+            <th><button onclick="enigma('I')">I</button></th>
+            <th><button onclick="enigma('O')">O</button></th>
+            <th><button onclick="enigma('P')">P</button></th>
+        </tr>
+    </table>
+    <table class="center">
+        <tr>
+            <th><button onclick="enigma('A')">A</button></th>
+            <th><button onclick="enigma('S')">S</button></th>
+            <th><button onclick="enigma('D')">D</button></th>
+            <th><button onclick="enigma('F')">F</button></th>
+            <th><button onclick="enigma('G')">G</button></th>
+            <th><button onclick="enigma('H')">H</button></th>
+            <th><button onclick="enigma('J')">J</button></th>
+            <th><button onclick="enigma('K')">K</button></th>
+            <th><button onclick="enigma('L')">L</button></th>
+        </tr>
+    </table>
+    <table class="center">
+        <tr>
+            <th><button onclick="enigma('Z')">Z</button></th>
+            <th><button onclick="enigma('X')">X</button></th>
+            <th><button onclick="enigma('C')">C</button></th>
+            <th><button onclick="enigma('V')">V</button></th>
+            <th><button onclick="enigma('B')">B</button></th>
+            <th><button onclick="enigma('N')">N</button></th>
+            <th><button onclick="enigma('M')">M</button></th>
+
+        </tr>
+    </table>
+
+    <p id="output" class="cent"></p>
+
+</body>
+</html>
