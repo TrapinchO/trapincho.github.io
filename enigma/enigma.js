@@ -1,7 +1,6 @@
-//alert("WARNING: This page is a prototype. Functionality will be added later")
+alert("WARNING: This page is a prototype. Functionality will be added later")
 
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 
 var rotors = {
     1: "JCWHGUSEZIBDYFARQPTONMXLKV",
@@ -12,7 +11,24 @@ var rotors = {
     6: "QVOWGPINUFMEKBDCJLZXATSYRH"
     };
 
-rotor_pos = [1, 1, 1]
+var reflector = {
+    "A": "N", "N": "A",
+    "B": "O", "O": "B",
+    "C": "P", "P": "C",
+    "D": "Q", "Q": "D",
+    "E": "R", "R": "E",
+    "F": "S", "S": "F",
+    "G": "T", "T": "G",
+    "H": "U", "U": "H",
+    "I": "V", "V": "I",
+    "J": "W", "W": "J",
+    "K": "X", "X": "K",
+    "L": "Y", "Y": "L",
+    "M": "Z", "Z": "M",
+};
+
+var rotor_pos = [1, 1, 1];
+var rotor_sel = [1, 2, 3];
 
 
 function enigma(character) {
@@ -55,17 +71,45 @@ function enigma(character) {
     };
 
 
+    // set rotors to prevent error
+    rotor_pos[0]--;
+    rotor_pos[1]--;
+    rotor_pos[2]--;
+
+    character = rotors[rot1][(abc.indexOf(character) + rotor_pos[0]) % 26];
+    character = rotors[rot2][(abc.indexOf(character) + rotor_pos[1]) % 26];
+    character = rotors[rot3][(abc.indexOf(character) + rotor_pos[2]) % 26];
+
+    // reflector
+    character = reflector[character];
+
+    var t = rotors[rot3].indexOf(character) - rotor_pos[2];
+    if (t < 0) { t += 26; }
+    character = abc[t];
+
+    t = rotors[rot2].indexOf(character) - rotor_pos[1];
+    if (t < 0) { t += 26; }
+    character = abc[t];
+
+    t = rotors[rot1].indexOf(character) - rotor_pos[0];
+    if (t < 0) { t += 26; }
+    character = abc[t];
+
+    // restore rotor positions
+    rotor_pos[0]++;
+    rotor_pos[1]++;
+    rotor_pos[2]++;
+
+    // check if rotors should turn
     rotor_pos[0]++;
     document.getElementById('rotor_pos1').value = rotor_pos[0];
     if (rotor_pos[0] > 26) {
-        console.log("R1: " + rotor_pos[0]);
         rotor_pos[0] = 1;
         document.getElementById('rotor_pos1').value = rotor_pos[0];
         rotor_pos[1]++;
         document.getElementById('rotor_pos2').value = rotor_pos[1];
 
         if (rotor_pos[1] > 26) {
-            console.log("R1: " + rotor_pos[1]);
             rotor_pos[1] = 1;
             document.getElementById('rotor_pos2').value = rotor_pos[1];
             rotor_pos[2]++;
