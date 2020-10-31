@@ -1,4 +1,4 @@
-alert("WARNING: This page is not finished, however it works.")
+//alert("WARNING: This page is not finished, however it works.")
 
 var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -77,6 +77,10 @@ function enigma(character) {
         document.getElementById('output').innerHTML = "Error:<br>" + out;
         return;
     };
+
+    var plugboard = document.getElementById("plugboard").value;
+    console.log(plugboard);
+    plugboard = plugboard.split(" ");
 
 
     // ---------- en/decrypt ----------

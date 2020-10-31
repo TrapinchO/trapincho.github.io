@@ -37,6 +37,14 @@
     "name": "Dark Cultist Cave", "source": "coords", "coords": "-570, -1352",
     "info": "A dark cultist cave. A miniboss called the Temporal Horror spawns here and drops dark aura which you need for the dark mask you can get at the ravine village.", "tags": ["cultists", "cave", "time_valley"]
   },
+  {
+    "name": "Abandoned Corkus Sewers", "source": "coords (at the beach)", "coords": "-1751 -3369",
+    "info": " Long disused this section of Corkus sewers has become home to a great amount of gross slime and broken pipes. It is not known why it was abandoned, however it may be because it is built below Avos land.", "tags": ["sewer", "abandoned", "corkus"]
+  },
+  {
+    "name": "Rodoroc Statue Prison", "source": "coords, on top of the statue", "coords": "1096, -5336",
+    "info": "Buried in one of the giant Dwarven statues guarding the entrance to the heights, there lies a long stairwell, that leads to a now unused prison. Likely a relic from the war, its cells are marked by their inmates' threat levels.", "tags": ["rodoroc", "prison", "abandoned"]
+  },
 
   {
     "name": "", "source": "", "coords": "",
