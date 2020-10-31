@@ -58,6 +58,10 @@
     "name": "Castaway Mercenary Settlement", "source": "coords", "coords": " -2130 -2325",
     "info": "Small settlement of \"Castaway Mercenaries\"", "tags": ["settlement", "mercenaries"]
   },
+  {
+    "name": "Sandstorm Vandals Hideout", "source": "coords", "coords": "1435 -2020",
+    "info": "Small Cave located in the East side of the desert filled with a few houses and signs giving more details on each bandits residing in the cave", "tags": ["cave", "desert", "bandits", "hideout"]
+  },
 
   {
     "name": "", "source": "", "coords": "",
