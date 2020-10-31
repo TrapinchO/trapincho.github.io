@@ -45,6 +45,10 @@
     "name": "Rodoroc Statue Prison", "source": "coords, on top of the statue", "coords": "1096, -5336",
     "info": "Buried in one of the giant Dwarven statues guarding the entrance to the heights, there lies a long stairwell, that leads to a now unused prison. Likely a relic from the war, its cells are marked by their inmates' threat levels.", "tags": ["rodoroc", "prison", "abandoned"]
   },
+  {
+    "name": " Olux Gate", "source": "coords", "coords": "1977 -5606",
+    "info": "Blocked gate near Olux", "tags": ["Olux", "gate"]
+  },
 
   {
     "name": "", "source": "", "coords": "",
