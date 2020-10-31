@@ -2,11 +2,11 @@
 [
 
   {
-    "name": "Llevigar Plains Creeper", "source": "entrance to the cave at coords", "coords": "-1497 42 -4773",
+    "name": "Llevigar Plains Creeper", "source": "coords<br>(entrance to the cave)", "coords": "-1497 42 -4773",
     "info": "Creeper head together with tnt on a cave at llevingar plains", "tags": ["creeper", "cave", "llevigar_plains"]
   },
   {
-    "name": "Ragni Torture Area", "source": "Entrance at coords", "coords": "-809, 75, -1609",
+    "name": "Ragni Torture Area", "source": "coords<br>(entrance)", "coords": "-809, 75, -1609",
     "info": "A small compound with prison cells, blood, cobwebs, and skull", "tags": ["ragni", "torture", "prison", "hidden"]
   },
   {
@@ -38,21 +38,29 @@
     "info": "A dark cultist cave. A miniboss called the Temporal Horror spawns here and drops dark aura which you need for the dark mask you can get at the ravine village.", "tags": ["cultists", "cave", "time_valley"]
   },
   {
-    "name": "Abandoned Corkus Sewers", "source": "coords (at the beach)", "coords": "-1751 -3369",
+    "name": "Abandoned Corkus Sewers", "source": "coords<br>(at the beach)", "coords": "-1751 -3369",
     "info": " Long disused this section of Corkus sewers has become home to a great amount of gross slime and broken pipes. It is not known why it was abandoned, however it may be because it is built below Avos land.", "tags": ["sewer", "abandoned", "corkus"]
   },
   {
-    "name": "Rodoroc Statue Prison", "source": "coords, on top of the statue", "coords": "1096, -5336",
+    "name": "Rodoroc Statue Prison", "source": "coords<br>(on top of the statue)", "coords": "1096, -5336",
     "info": "Buried in one of the giant Dwarven statues guarding the entrance to the heights, there lies a long stairwell, that leads to a now unused prison. Likely a relic from the war, its cells are marked by their inmates' threat levels.", "tags": ["rodoroc", "prison", "abandoned"]
   },
   {
     "name": " Olux Gate", "source": "coords", "coords": "1977 -5606",
     "info": "Blocked gate near Olux", "tags": ["Olux", "gate"]
   },
+  {
+    "name": "Dark Knight Cave", "source": "corrds", "coords": "-2085 -1885",
+    "info": "Cave full of Dark Knights and Dark Archers", "tags": ["cave"]
+  },
+
+  {
+    "name": "Castaway Mercenary Settlement", "source": "coords", "coords": " -2130 -2325",
+    "info": "Small settlement of \"Castaway Mercenaries\"", "tags": ["settlement", "mercenaries"]
+  },
 
   {
     "name": "", "source": "", "coords": "",
     "info": "", "tags": []
   }
-
 ]
