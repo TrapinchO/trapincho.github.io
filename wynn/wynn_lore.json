@@ -62,6 +62,14 @@
     "name": "Sandstorm Vandals Hideout", "source": "coords", "coords": "1435 -2020",
     "info": "Small Cave located in the East side of the desert filled with a few houses and signs giving more details on each bandits residing in the cave", "tags": ["cave", "desert", "bandits", "hideout"]
   },
+  {
+    "name": "Dernic Bee Hive", "source": "coords from Ruined Olmic City side", "coords": "774 -477",
+    "info": "A small lonely hive hidden among the spike around the olmic city.", "tags": ["bee", "beehive", "SE"]
+  },
+  {
+    "name": "", "source": "", "coords": "",
+    "info": "", "tags": []
+  },
 
   {
     "name": "", "source": "", "coords": "",
