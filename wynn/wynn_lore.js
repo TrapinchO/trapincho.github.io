@@ -16,7 +16,7 @@ function getLS() {
     while (table.rows.length > 1) { table.deleteRow(1); }
 
     // search by name
-    var search_name = document.getElementById('search_name').value;
+    var search_name = document.getElementById('search_name').value.toLowerCase();
     // search by tags
     var search_tags = document.getElementById('search_tags').value;
 

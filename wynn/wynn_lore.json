@@ -2,77 +2,95 @@
 [
 
   {
-    "name": "Llevigar Plains Creeper", "source": "coords<br>(entrance to the cave)", "coords": "-1497 42 -4773",
-    "info": "Creeper head together with tnt on a cave at llevingar plains", "tags": ["creeper", "cave", "llevigar_plains"]
+    "name": "llevigar plains creeper", "source": "coords<br>(entrance to the cave)", "coords": "-1497 42 -4773",
+    "info": "Creeper head together with tnt on a cave at llevingar plains",
+    "tags": ["creeper", "cave", "llevigar_plains"]
   },
   {
-    "name": "Ragni Torture Area", "source": "coords<br>(entrance)", "coords": "-809, 75, -1609",
-    "info": "A small compound with prison cells, blood, cobwebs, and skull", "tags": ["ragni", "torture", "prison", "hidden"]
+    "name": "ragni torture area", "source": "coords<br>(entrance)", "coords": "-809, 75, -1609",
+    "info": "A small compound with prison cells, blood, cobwebs, and skull",
+    "tags": ["ragni", "torture", "prison", "hidden"]
   },
   {
-    "name": "Sewer Trap", "source": "coords", "coords": "-494, -1616",
-    "info": "A trap which leads into sewers with item frames and cells. Exits into a small house off the emerald trail.", "tags": ["emerald_trail", "sewer_trap", "prison"]
+    "name": "sewer trap", "source": "coords", "coords": "-494, -1616",
+    "info": "A trap which leads into sewers with item frames and cells. Exits into a small house off the emerald trail.",
+    "tags": ["emerald_trail", "sewer_trap", "prison"]
   },
   {
-    "name": "Larkster Pirate Cave", "source": "coords", "coords": "-798, 37, 1966",
-    "info": " A cave full of neutral and hostile pirates - contains some kind of plan/message board, and an area to watch crabs fight.", "tags": ["cave", "katoa", "pirates"]
+    "name": "larkster pirate cave", "source": "coords", "coords": "-798, 37, 1966",
+    "info": " A cave full of neutral and hostile pirates - contains some kind of plan/message board, and an area to watch crabs fight.",
+    "tags": ["cave", "katoa", "pirates"]
   },
   {
-    "name": "Nivla Ritual Site", "source": "coords", "coords": "-355, -1415",
-    "info": "A glade surrounded by candles, looks ritualistic", "tags": ["nivla", "road_to_time_valley"]
+    "name": "nivla ritual site", "source": "coords", "coords": "-355, -1415",
+    "info": "A glade surrounded by candles, looks ritualistic",
+    "tags": ["nivla", "road_to_time_valley"]
   },
   {
-    "name": "Nivla Rose Tree Circle", "source": "coords", "coords": "-393, -1500",
-    "info": "A circle of six charred tree stumps around a rose that judging by F3 has an armour stand in/on it", "tags": ["nivla", "rose", "circle"]
+    "name": "nivla rose tree circle", "source": "coords", "coords": "-393, -1500",
+    "info": "A circle of six charred tree stumps around a rose that judging by F3 has an armour stand in/on it",
+    "tags": ["nivla", "rose", "circle"]
   },
   {
-    "name": "Nivla Outskirts Building", "source": "coords", "coords": "-375, -1370",
-    "info": " A stone building, not ruined, leading down to a mob-free quartz room.", "tags": ["building", "intact", "nivla"]
+    "name": "nivla outskirts building", "source": "coords", "coords": "-375, -1370",
+    "info": " A stone building, not ruined, leading down to a mob-free quartz room.",
+    "tags": ["building", "intact", "nivla"]
   },
   {
-    "name": "Time Valley Crystal Slots", "source": "coords", "coords": "-574, -1172",
-    "info": "Here, on the front of the temple, you can see a large sapphire slot at the centre, three on the left, and two, with one empty slot, on the right.", "tags": ["time_valley", "temple_of_time", "crystals"]
+    "name": "time valley crystal slots", "source": "coords", "coords": "-574, -1172",
+    "info": "Here, on the front of the temple, you can see a large sapphire slot at the centre, three on the left, and two, with one empty slot, on the right.",
+    "tags": ["time_valley", "temple_of_time", "crystals"]
   },
   {
-    "name": "Dark Cultist Cave", "source": "coords", "coords": "-570, -1352",
-    "info": "A dark cultist cave. A miniboss called the Temporal Horror spawns here and drops dark aura which you need for the dark mask you can get at the ravine village.", "tags": ["cultists", "cave", "time_valley"]
+    "name": "dark cultist cave", "source": "coords", "coords": "-570, -1352",
+    "info": "A dark cultist cave. A miniboss called the Temporal Horror spawns here and drops dark aura which you need for the dark mask you can get at the ravine village.",
+    "tags": ["cultists", "cave", "time_valley"]
   },
   {
-    "name": "Abandoned Corkus Sewers", "source": "coords<br>(at the beach)", "coords": "-1751 -3369",
-    "info": " Long disused this section of Corkus sewers has become home to a great amount of gross slime and broken pipes. It is not known why it was abandoned, however it may be because it is built below Avos land.", "tags": ["sewer", "abandoned", "corkus"]
+    "name": "abandoned corkus sewers", "source": "coords<br>(at the beach)", "coords": "-1751 -3369",
+    "info": " Long disused this section of Corkus sewers has become home to a great amount of gross slime and broken pipes. It is not known why it was abandoned, however it may be because it is built below Avos land.",
+    "tags": ["sewer", "abandoned", "corkus"]
   },
   {
-    "name": "Rodoroc Statue Prison", "source": "coords<br>(on top of the statue)", "coords": "1096, -5336",
-    "info": "Buried in one of the giant Dwarven statues guarding the entrance to the heights, there lies a long stairwell, that leads to a now unused prison. Likely a relic from the war, its cells are marked by their inmates' threat levels.", "tags": ["rodoroc", "prison", "abandoned"]
+    "name": "rodoroc statue prison", "source": "coords<br>(on top of the statue)", "coords": "1096, -5336",
+    "info": "Buried in one of the giant Dwarven statues guarding the entrance to the heights, there lies a long stairwell, that leads to a now unused prison. Likely a relic from the war, its cells are marked by their inmates' threat levels.",
+    "tags": ["rodoroc", "prison", "abandoned"]
   },
   {
-    "name": " Olux Gate", "source": "coords", "coords": "1977 -5606",
-    "info": "Blocked gate near Olux", "tags": ["Olux", "gate"]
+    "name": "olux gate", "source": "coords", "coords": "1977 -5606",
+    "info": "Blocked gate near Olux",
+    "tags": ["Olux", "gate"]
   },
   {
-    "name": "Dark Knight Cave", "source": "corrds", "coords": "-2085 -1885",
-    "info": "Cave full of Dark Knights and Dark Archers", "tags": ["cave"]
-  },
-
-  {
-    "name": "Castaway Mercenary Settlement", "source": "coords", "coords": " -2130 -2325",
-    "info": "Small settlement of \"Castaway Mercenaries\"", "tags": ["settlement", "mercenaries"]
-  },
-  {
-    "name": "Sandstorm Vandals Hideout", "source": "coords", "coords": "1435 -2020",
-    "info": "Small Cave located in the East side of the desert filled with a few houses and signs giving more details on each bandits residing in the cave", "tags": ["cave", "desert", "bandits", "hideout"]
-  },
-  {
-    "name": "Dernic Bee Hive", "source": "coords from Ruined Olmic City side", "coords": "774 -477",
-    "info": "A small lonely hive hidden among the spike around the olmic city.", "tags": ["bee", "beehive", "SE"]
-  },
-  {
-    "name": "", "source": "", "coords": "",
-    "info": "", "tags": []
+    "name": "dark knight cave", "source": "corrds", "coords": "-2085 -1885",
+    "info": "Cave full of Dark Knights and Dark Archers",
+    "tags": ["cave"]
   },
 
   {
+    "name": "castaway mercenary settlement", "source": "coords", "coords": " -2130 -2325",
+    "info": "Small settlement of \"Castaway Mercenaries\"",
+    "tags": ["settlement", "mercenaries"]
+  },
+  {
+    "name": "sandstorm vandals hideout", "source": "coords", "coords": "1435 -2020",
+    "info": "Small Cave located in the East side of the desert filled with a few houses and signs giving more details on each bandits residing in the cave",
+    "tags": ["cave", "desert", "bandits", "hideout"]
+  },
+  {
+    "name": "dernic bee hive", "source": "coords from Ruined Olmic City side", "coords": "774 -477",
+    "info": "A small lonely hive hidden among the spike around the olmic city.",
+    "tags": ["bee", "beehive", "SE"]
+  },
+  {
     "name": "", "source": "", "coords": "",
-    "info": "", "tags": []
+    "info": "",
+    "tags": []
+  },
+
+  {
+    "name": "", "source": "", "coords": "",
+    "info": "",
+    "tags": []
   }
 ]
