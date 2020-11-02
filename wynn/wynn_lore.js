@@ -75,8 +75,7 @@ function showAll() {
 
     // put info on table
     for (info in lore) {
-        info = lore[info];
-        addToTable(info);
+        addToTable(lore[info]);
     }
 }
 
@@ -94,4 +93,20 @@ function addToTable(info) {
         + info["name"].replaceAll(" ", "_")
         + '.png" style="width:160px;height:90px;">';
     return;
+}
+
+function allTags() {
+    var all_tags = new Set();
+    for (info in lore) {
+        for (_tag in lore[info]["tags"]) {
+            all_tags.add(lore[info]["tags"][_tag]);
+        }
+    }
+    console.log(all_tags);
+    var all_tags_str = "";
+    all_tags = Array.from(all_tags)
+    for (_tag of all_tags.sort()) {
+        all_tags_str = all_tags_str.concat(_tag) + "<br>";
+    }
+    document.getElementById('found').innerHTML = all_tags_str;
 }
