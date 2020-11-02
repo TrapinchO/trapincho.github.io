@@ -96,17 +96,23 @@ function addToTable(info) {
 }
 
 function allTags() {
+    // ----- get all unique tags -----
     var all_tags = new Set();
     for (info in lore) {
-        for (_tag in lore[info]["tags"]) {
-            all_tags.add(lore[info]["tags"][_tag]);
+        for (_tag in lore[info]["tags"]) { all_tags.add(lore[info]["tags"][_tag]); }
+    }
+    // ----- create sorted array from the set -----
+    all_tags = Array.from(all_tags).sort()
+
+    // ----- create table with tags -----
+    var table = document.getElementById("tag_table");
+    // ----- go by rows -----
+    for (let row_iter=0; row_iter <= Math.floor((all_tags.length)/10); row_iter++) {
+        var row = table.insertRow(row_iter);
+
+        // ----- go by columns -----
+        for (let cell_iter=0; cell_iter < 10; cell_iter++) {
+            row.insertCell(cell_iter).innerHTML = all_tags[(row_iter*10)+cell_iter];
         }
     }
-    console.log(all_tags);
-    var all_tags_str = "";
-    all_tags = Array.from(all_tags)
-    for (_tag of all_tags.sort()) {
-        all_tags_str = all_tags_str.concat(_tag) + "<br>";
-    }
-    document.getElementById('found').innerHTML = all_tags_str;
 }

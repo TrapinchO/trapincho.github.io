@@ -58,7 +58,7 @@
   {
     "name": "olux gate", "source": "coords", "coords": "1977 -5606",
     "info": "Blocked gate near Olux",
-    "tags": ["Olux", "gate"]
+    "tags": ["olux", "gate"]
   },
   {
     "name": "dark knight cave", "source": "corrds", "coords": "-2085 -1885",
@@ -79,7 +79,7 @@
   {
     "name": "dernic bee hive", "source": "coords from Ruined Olmic City side", "coords": "774 -477",
     "info": "A small lonely hive hidden among the spike around the olmic city.",
-    "tags": ["bee", "beehive", "SE"]
+    "tags": ["bee", "beehive", "se"]
   },
 
   {
