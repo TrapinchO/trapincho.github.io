@@ -81,10 +81,57 @@
     "info": "A small lonely hive hidden among the spike around the olmic city.",
     "tags": ["bee", "beehive", "se"]
   },
+  {
+    "name": "curious starrers cave", "source": "coords", "coords": "490 -325",
+    "info": "a small cave / hole above some ruins behind the ruined olmic city, when you enter your character will be frozen and a group of curious starrers will appear and encircle you, after a few seconds you will be teleported in a secret cave above the first one with 3 tier; BUGGED",
+    "tags": ["cave", "olm", "curious_starres"]
+  },
+  {
+    "name": "olm city underground", "source": "entrance at coords", "coords": "510 -475",
+    "info": "Medium size underground below one of the building. Contains 3 cells. Dern influence clearly visible",
+    "tags": ["olm", "ruined_olmic_city", "underground"]
+  },
+  {
+    "name": "olm city temple side", "source": "location at coords<br>tunnel at 425 -630", "coords": "525 -630",
+    "info": "Massive building inside the mountain. There is tunnel with fallen ceiling",
+    "tags": ["olm", "ruined_olmic_city", "underground"]
+  },
+  {
+    "name": "olm city underground altar", "source": "coords, entrance at 667 -605", "coords": "676 -613",
+    "info": "Small underground altar",
+    "tags": ["olm", "ruined_olmic_city", "underground", "altar"]
+  },
+  {
+    "name": "giant eggs avos territory", "source": "coords", "coords": "-1691 162 -3365",
+    "info": "Three massive eggs in a large nest on a hillside",
+    "tags": ["egg", "avos", "nest"]
+  },
+  {
+    "name": "bloody avos cave", "source": "coords", "coords": "-1740 -3320",
+    "info": "A large cave full of blood and skulls in Avos territory",
+    "tags": ["cave", "avos", "blood"]
+  },
+
+  {
+    "name": "large bloody avos cave", "source": "coords", "coords": "-1957 120 -3297",
+    "info": "You can enter this cave by falling through a large hole in a house above it. There also exists a side entrance. The cave is full of blood and flesh.",
+    "tags": ["avos", "cave", "blood"]
+  },
+  {
+    "name": "ancient ruins under uth shrine", "source": "coords (entrance -1972 80 -3282)", "coords": "-1895 77 -3259",
+    "info": "Old stone brick ruins and archways directly under the Uth shrine. New, wooden scaffolding is found nearby, with a campsite closer to the cave's entrance full of mechs.",
+    "tags": ["avos", "cave", "ruin", "uth_shrine"]
+  },
+  {
+    "name": "avos cage cave", "source": "coords", "coords": "-1867 77 -3173",
+    "info": "A large, open cave with many cages hanging from the ceiling. There are spikes, skulls and blood around the area. The entrance is guarded by a row of Avos warriors. Looking at the structure, it seems that when the prisoners die, the floors of the cages are opened, and the bodies are left in piles under the cages.",
+    "tags": ["avos", "cave", "cage"]
+  },
 
   {
     "name": "", "source": "", "coords": "",
     "info": "",
     "tags": []
   }
+
 ]

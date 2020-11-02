@@ -46,7 +46,6 @@ function getLS() {
 
     search_tags = search_tags.split(" "); // make it an array
 
-
     var ls = false; // check for entries
 
     for (info in lore) {
