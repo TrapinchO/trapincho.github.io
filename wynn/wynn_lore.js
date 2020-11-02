@@ -13,6 +13,12 @@ function getLS() {
 
     // reset from previous searches
     document.getElementById('found').innerHTML = "";
+    // ----- reset -----
+    // tags
+    table = document.getElementById("tag_table");
+    while (table.rows.length > 0) { table.deleteRow(0); }
+    // lore database
+    var table = document.getElementById("entries");
     while (table.rows.length > 1) { table.deleteRow(1); }
 
     // search by name
@@ -67,11 +73,15 @@ function getLS() {
 
 
 function showAll() {
-    // get table
-    var table = document.getElementById("entries");
     // reset
     document.getElementById('found').innerHTML = "";
+    // ----- reset -----
+    // lore database
+    var table = document.getElementById("entries");
     while (table.rows.length > 1) { table.deleteRow(1); }
+    // tags
+    table = document.getElementById("tag_table");
+    while (table.rows.length > 0) { table.deleteRow(0); }
 
     // put info on table
     for (info in lore) {
@@ -96,6 +106,16 @@ function addToTable(info) {
 }
 
 function allTags() {
+    // ----- reset -----
+    document.getElementById('found').innerHTML = "";
+    // lore database
+    var table = document.getElementById("entries");
+    while (table.rows.length > 1) { table.deleteRow(1); }
+    // tags
+    table = document.getElementById("tag_table");
+    while (table.rows.length > 0) { table.deleteRow(0); }
+
+
     // ----- get all unique tags -----
     var all_tags = new Set();
     for (info in lore) {
@@ -112,7 +132,8 @@ function allTags() {
 
         // ----- go by columns -----
         for (let cell_iter=0; cell_iter < 10; cell_iter++) {
-            row.insertCell(cell_iter).innerHTML = all_tags[(row_iter*10)+cell_iter];
+            if (!all_tags[(row_iter*10)+cell_iter]) { row.insertCell(cell_iter).innerHTML = ""; }
+            else { row.insertCell(cell_iter).innerHTML = all_tags[(row_iter*10)+cell_iter]; }
         }
     }
 }
