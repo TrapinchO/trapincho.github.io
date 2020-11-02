@@ -18,7 +18,7 @@ function getLS() {
     // search by name
     var search_name = document.getElementById('search_name').value.toLowerCase();
     // search by tags
-    var search_tags = document.getElementById('search_tags').value;
+    var search_tags = document.getElementById('search_tags').value.toLowerCase();
 
     // if all empty -> return
     if (!search_tags && !search_name) {
@@ -90,5 +90,8 @@ function addToTable(info) {
     row.insertCell(2).innerHTML = info["coords"];
     row.insertCell(3).innerHTML = info["info"];
     row.insertCell(4).innerHTML = info["tags"].join("<br>");
+    row.insertCell(5).innerHTML = '<img src="' + "wynn_images/"
+        + info["name"].replaceAll(" ", "_")
+        + '.png" style="width:160px;height:90px;">';
     return;
 }
