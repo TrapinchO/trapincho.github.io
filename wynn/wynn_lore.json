@@ -127,6 +127,52 @@
     "info": "A large, open cave with many cages hanging from the ceiling. There are spikes, skulls and blood around the area. The entrance is guarded by a row of Avos warriors. Looking at the structure, it seems that when the prisoners die, the floors of the cages are opened, and the bodies are left in piles under the cages.",
     "tags": ["avos", "cave", "cage"]
   },
+  {
+    "name": "abandoned tower cotl", "source": "coords", "coords": "90 -4447",
+    "info": "Abandoned tower in CotL",
+    "tags": ["tower", "cotl"]
+  },
+  {
+    "name": "bantisu air temple beehive", "source": "coords", "coords": "489 -4690",
+    "info": "Beehive in Bantishu Air temple",
+    "tags": ["cotl", "bantishu_air_temple", "beehive"]
+  },
+  {
+    "name": "bantishu temple cave tree", "source": "coords, entrance at 495 -4688", "coords": "475 -4735",
+    "info": "A large tree in massive cave in the Bantishu Air Temple",
+    "tags": ["bantishu_air_temple", "cotl", "cave", "tree"]
+  },
+  {
+    "name": "bantishu air temple passage", "source": "entrance at coords", "coords": "577 -4816",
+    "info": "Big passage from the air temple into the canyons",
+    "tags": ["passage", "cotl", "bantishu_air_temple"]
+  },
+  {
+    "name": "cotl mining site", "source": "elevator at coords", "coords": "740 -5210",
+    "info": "A large mining site",
+    "tags": ["cotl", "mine", "cave"]
+  },
+  {
+    "name": "eldritch outlook sculpted wall", "source": "coords", "coords": "1410 -700",
+    "info": "The walls of the EO Contains small statues, this one seems to represent a humanoid being riding a horse",
+    "tags": ["olm", "se", "eo"]
+  },
+  {
+    "name": "wynn-mesa mountains grave", "source": "coords (at the top of the mountains)", "coords": "986 -1312",
+    "info": "A little gave with wooden cross and sign saying: \"To chime and bell, To solitude, I bid thee, Farewell.\"",
+    "tags": ["wynn", "mountains", "grave"]
+  },
+  {
+    "name": "abandoned mines mountains camp", "source": "coords (up in the mountains)", "coords": "868 -1223",
+    "info": "Small abandoned camp in the mountains",
+    "tags": ["mountains", "camp", "abandoned"]
+  },
+  {
+    "name": "corrupted village ruined houses", "source": "coords (on top of the mountains)", "coords": "280 -1035",
+    "info": "3 small ruined houses near Corrupted Village",
+    "tags": ["ruin", "corrupted_village", "house", "mountains"]
+  },
+
 
   {
     "name": "", "source": "", "coords": "",
