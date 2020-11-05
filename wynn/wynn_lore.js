@@ -34,6 +34,7 @@ function getLS() {
                 return;
             }
         }
+        document.getElementById('found').innerHTML = "No entry named \"" + search_name + "\" was found, searching by tags";
     }
 
     search_tags = search_tags.split(" "); // make it an array
