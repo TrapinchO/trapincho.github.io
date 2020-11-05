@@ -11,15 +11,7 @@ function getLS() {
     // get the table
     var table = document.getElementById("entries");
 
-    // reset from previous searches
-    document.getElementById('found').innerHTML = "";
-    // ----- reset -----
-    // tags
-    table = document.getElementById("tag_table");
-    while (table.rows.length > 0) { table.deleteRow(0); }
-    // lore database
-    var table = document.getElementById("entries");
-    while (table.rows.length > 1) { table.deleteRow(1); }
+    resetTables();
 
     // search by name
     var search_name = document.getElementById('search_name').value.toLowerCase();
@@ -71,22 +63,15 @@ function getLS() {
 }
 
 
-function showAll() {
-    // reset
-    document.getElementById('found').innerHTML = "";
-    // ----- reset -----
-    // lore database
-    var table = document.getElementById("entries");
-    while (table.rows.length > 1) { table.deleteRow(1); }
-    // tags
-    table = document.getElementById("tag_table");
-    while (table.rows.length > 0) { table.deleteRow(0); }
+function showAllEntries() {
+    resetTables();
 
     // put info on table
     for (info in lore) {
         addToTable(lore[info]);
     }
 }
+
 
 function addToTable(info) {
     var table = document.getElementById("entries");
@@ -104,16 +89,22 @@ function addToTable(info) {
     return;
 }
 
-function allTags() {
-    // ----- reset -----
+
+function resetTables() {
+    // reset
     document.getElementById('found').innerHTML = "";
+    // ----- reset -----
     // lore database
     var table = document.getElementById("entries");
     while (table.rows.length > 1) { table.deleteRow(1); }
     // tags
     table = document.getElementById("tag_table");
     while (table.rows.length > 0) { table.deleteRow(0); }
+}
 
+
+function allTags() {
+    resetTables();
 
     // ----- get all unique tags -----
     var all_tags = new Set();
@@ -121,7 +112,7 @@ function allTags() {
         for (_tag in lore[info]["tags"]) { all_tags.add(lore[info]["tags"][_tag]); }
     }
     // ----- create sorted array from the set -----
-    all_tags = Array.from(all_tags).sort()
+    all_tags = Array.from(all_tags).sort();
 
     // ----- create table with tags -----
     var table = document.getElementById("tag_table");
