@@ -9,14 +9,14 @@ $.getJSON( "wynn_lore.json", function( json ) {
 
 function getLS() {
     // get the table
-    var table = document.getElementById("entries");
+    const table = document.getElementById("entries");
 
     resetTables();
 
     // search by name
-    var search_name = document.getElementById('search_name').value.toLowerCase();
+    const search_name = document.getElementById('search_name').value.toLowerCase();
     // search by tags
-    var search_tags = document.getElementById('search_tags').value.toLowerCase();
+    let search_tags = document.getElementById('search_tags').value.toLowerCase();
 
     // if all empty -> return
     if (!search_tags && !search_name) {
@@ -39,13 +39,14 @@ function getLS() {
 
     search_tags = search_tags.split(" "); // make it an array
 
-    var ls = false; // check for entries
+    let ls = false; // check for entries
 
     for (info in lore) {
         info = lore[info]; // gets the entry - json
 
+        let found = true; // reset it
         for (tag in search_tags) {
-            var found = true; // reset it
+            found = true; // reset it
             tag = search_tags[tag]; // gets the tag - string
 
             // if not found break
@@ -75,10 +76,10 @@ function showAllEntries() {
 
 
 function addToTable(info) {
-    var table = document.getElementById("entries");
+    let table = document.getElementById("entries");
 
-    var rowCount = table.rows.length;
-    var row = table.insertRow(rowCount);
+    let rowCount = table.rows.length;
+    let row = table.insertRow(rowCount);
     row.insertCell(0).innerHTML = info["name"];
     row.insertCell(1).innerHTML = info["source"];
     row.insertCell(2).innerHTML = info["coords"];
@@ -96,7 +97,7 @@ function resetTables() {
     document.getElementById('found').innerHTML = "";
     // ----- reset -----
     // lore database
-    var table = document.getElementById("entries");
+    let table = document.getElementById("entries");
     while (table.rows.length > 1) { table.deleteRow(1); }
     // tags
     table = document.getElementById("tag_table");
@@ -108,7 +109,7 @@ function allTags() {
     resetTables();
 
     // ----- get all unique tags -----
-    var all_tags = new Set();
+    let all_tags = new Set();
     for (info in lore) {
         for (_tag in lore[info]["tags"]) { all_tags.add(lore[info]["tags"][_tag]); }
     }
@@ -116,10 +117,10 @@ function allTags() {
     all_tags = Array.from(all_tags).sort();
 
     // ----- create table with tags -----
-    var table = document.getElementById("tag_table");
+    let table = document.getElementById("tag_table");
     // ----- go by rows -----
     for (let row_iter=0; row_iter <= Math.floor((all_tags.length)/10); row_iter++) {
-        var row = table.insertRow(row_iter);
+        let row = table.insertRow(row_iter);
 
         // ----- go by columns -----
         for (let cell_iter=0; cell_iter < 10; cell_iter++) {
