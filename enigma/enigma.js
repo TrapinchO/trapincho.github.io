@@ -34,7 +34,7 @@ function enigma(character) {
     //document.getElementById('rotor1').value = 2;
     // reset
     document.getElementById('output').innerHTML = "";
-    var out = "";
+    let out = "";
 
     // get the variables
     // check if they are valid number
@@ -84,9 +84,9 @@ function enigma(character) {
 
     // ---------- plugboard ----------
     // get the string
-    var plugboard = document.getElementById("plugboard").value.toUpperCase();
+    let plugboard = document.getElementById("plugboard").value.toUpperCase();
     // replace spaces (for testing)
-    var pb_str = plugboard.replaceAll(" ", "");
+    const pb_str = plugboard.replaceAll(" ", "");
 
     // if the string length is odd -> error
     if (pb_str.length % 2 == 1) {
@@ -94,7 +94,7 @@ function enigma(character) {
         return;
     }
     // if there is duplicate letter -> error
-    var pb_tmp = [];
+    let pb_tmp = [];
     for (i in pb_str) {
         i = pb_str[i];
         if (!pb_tmp.includes(i)) { pb_tmp.push(i); }
@@ -116,7 +116,7 @@ function enigma(character) {
 
 
     // ---------- en/decrypt ----------
-    var old_character = character;
+    const old_character = character;
     // set rotors to prevent error
     rotor_pos[0]--;
     rotor_pos[1]--;
@@ -134,17 +134,17 @@ function enigma(character) {
     character = reflector[character];
 
     // ----- 2nd rotors -----
-    var t = rotors[rotor_sel[2]].indexOf(character) - rotor_pos[2];
-    if (t < 0) { t += 26; }
-    character = abc[t];
+    let position = rotors[rotor_sel[2]].indexOf(character) - rotor_pos[2];
+    if (position < 0) { position += 26; }
+    character = abc[position];
 
-    t = rotors[rotor_sel[1]].indexOf(character) - rotor_pos[1];
-    if (t < 0) { t += 26; }
-    character = abc[t];
+    position = rotors[rotor_sel[1]].indexOf(character) - rotor_pos[1];
+    if (position < 0) { position += 26; }
+    character = abc[position];
 
-    t = rotors[rotor_sel[0]].indexOf(character) - rotor_pos[0];
-    if (t < 0) { t += 26; }
-    character = abc[t];
+    position = rotors[rotor_sel[0]].indexOf(character) - rotor_pos[0];
+    if (position < 0) { position += 26; }
+    character = abc[position];
 
     // ----- plugboard -----
     if (plugboard.hasOwnProperty(character)) { character = plugboard[character]; }
