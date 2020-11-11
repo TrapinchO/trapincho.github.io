@@ -88,9 +88,7 @@ function addToTable(info) {
     row.insertCell(5).innerHTML = '<img src="' + "wynn_images/"
         + info["name"].replaceAll(" ", "_")
         + '.png" style="width:160px;height:90px;">';
-    return;
 }
-
 
 function resetTables() {
     // reset

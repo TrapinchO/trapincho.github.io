@@ -172,6 +172,21 @@
     "info": "3 small ruined houses near Corrupted Village",
     "tags": ["ruin", "corrupted_village", "house", "mountains"]
   },
+  {
+    "name": "ruined olmic city altar", "source": "coords", "coords": "514 99 -422",
+    "info": "What looks to be a withered skull behind bars, maybe a prison, which what looks like a key holder to open the doors",
+    "tags": ["ruined_olmic_city", "altar"]
+  },
+  {
+    "name": "curious starrers area (TOR quest)", "source": "coords (entrance at 695 -550)", "coords": "742 83 -581",
+    "info": " When you walk up into the little hole in the wall three curious starrers will apear behind you for only a seccond. Strange how this occurrence happened elsewhere",
+    "tags": ["olm", "ruined_olmic_city", "curious_starrers"]
+  },
+  {
+    "name": "se withered flower", "source": "coords (entrance at 650 -805)", "coords": "638 84 -814",
+    "info": "What looks to be a withered flower in a cave. Its the only flower there",
+    "tags": ["se", "abandoned_mines_se"]
+  },
 
 
   {
