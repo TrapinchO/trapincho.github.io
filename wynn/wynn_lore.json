@@ -187,6 +187,11 @@
     "info": "What looks to be a withered flower in a cave. Its the only flower there",
     "tags": ["se", "abandoned_mines_se"]
   },
+  {
+    "name": "se darkness spikes with red substance", "source": "coords", "coords": "539 20 -854",
+    "info": "These darkness spikes right before the Olmic City are connected to darkness swirls, and at the contact point, some sort of red substance is formed",
+    "tags": ["darkness", "se", "spike"]
+  },
 
 
   {
