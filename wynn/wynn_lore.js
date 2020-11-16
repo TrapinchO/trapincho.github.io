@@ -30,19 +30,20 @@ function searchEntries() {
 
     // if all empty -> return
     if (!search_tags && !search_name && !search_id) {
-        console.log(search_name);
         document.getElementById('found').innerHTML = "Search boxes are empty";
         return;
     }
     // if id field is not empty
     // name search has the highest priority
     else if (search_id) {
+        addHeaderLine();
         addToTable(lore[search_id-1]);
         return;
     }
     // if name not empty -> search name
     // name search has higher priority
     else if (search_name) {
+        addHeaderLine();
         for (info in lore) {
             if (!lore[info]["name"].localeCompare(search_name)) {
                 // put it into table
@@ -52,11 +53,11 @@ function searchEntries() {
         }
         document.getElementById('found').innerHTML = "No entry named \"" + search_name + "\" was found, searching by tags";
     }
+    addHeaderLine();
 
     search_tags = search_tags.split(" "); // make it an array
 
     let ls = false; // check for entries
-
     for (info in lore) {
         info = lore[info]; // gets the entry - json
 
@@ -83,6 +84,7 @@ function searchEntries() {
 
 function showAllEntries() {
     resetTables();
+    addHeaderLine();
 
     // put info on table
     for (info in lore) {
@@ -90,6 +92,18 @@ function showAllEntries() {
     }
 }
 
+function addHeaderLine() {
+    let table = document.getElementById("entries");
+
+    let row = table.insertRow(0);
+    row.insertCell(0).innerHTML = "<b>ID</b>";
+    row.insertCell(1).innerHTML = "<b>Name</b>";
+    row.insertCell(2).innerHTML = "<b>Source</b>";
+    row.insertCell(3).innerHTML = "<b>Coords</b>";
+    row.insertCell(4).innerHTML = "<b>Info</b>";
+    row.insertCell(5).innerHTML = "<b>Tags</b>";
+    row.insertCell(6).innerHTML = "<b>Images</b>";
+}
 
 function addToTable(info) {
     let table = document.getElementById("entries");
@@ -114,7 +128,7 @@ function resetTables() {
     // ----- reset -----
     // lore database
     let table = document.getElementById("entries");
-    while (table.rows.length > 1) { table.deleteRow(1); }
+    while (table.rows.length > 0) { table.deleteRow(0); }
     // tags
     table = document.getElementById("tag_table");
     while (table.rows.length > 0) { table.deleteRow(0); }
