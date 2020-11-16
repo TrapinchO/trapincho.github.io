@@ -15,7 +15,6 @@ function getLS() {
 
     // search by id
     const search_id = parseInt(document.getElementById('search_id').value.toLowerCase());
-    console.log(lore.length);
     if (search_id < 1) {
         document.getElementById('found').innerHTML = "Id cannot be lower than 1";
         return;
