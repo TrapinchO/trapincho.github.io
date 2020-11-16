@@ -13,15 +13,32 @@ function getLS() {
 
     resetTables();
 
+    // search by id
+    const search_id = parseInt(document.getElementById('search_id').value.toLowerCase());
+    console.log(lore.length);
+    if (search_id < 1) {
+        document.getElementById('found').innerHTML = "Id cannot be lower than 1";
+        return;
+    }
+    else if (search_id > lore.length) {
+        document.getElementById('found').innerHTML = "Id cannot be higher than " + lore.length;
+        return;
+    }
     // search by name
     const search_name = document.getElementById('search_name').value.toLowerCase();
     // search by tags
     let search_tags = document.getElementById('search_tags').value.toLowerCase();
 
     // if all empty -> return
-    if (!search_tags && !search_name) {
+    if (!search_tags && !search_name && !search_id) {
         console.log(search_name);
         document.getElementById('found').innerHTML = "Search boxes are empty";
+        return;
+    }
+    // if id field is not empty
+    // name search has the highest priority
+    else if (search_id) {
+        addToTable(lore[search_id-1]);
         return;
     }
     // if name not empty -> search name
@@ -90,6 +107,7 @@ function addToTable(info) {
         + info["name"].replaceAll(" ", "_")
         + '.png" style="width:160px;height:90px;">';
 }
+
 
 function resetTables() {
     // reset

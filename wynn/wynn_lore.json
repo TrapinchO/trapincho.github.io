@@ -85,146 +85,146 @@
     "tags": ["ocean_coast", "settlement", "mercenaries"]
   },
   {
-    "id": 14, "name": "desert sandstorm vandals hideout",
+    "id": 15, "name": "desert sandstorm vandals hideout",
     "source": "coords", "coords": "1435 -2020",
     "info": "Small Cave located in the East side of the desert filled with a few houses and signs giving more details on each bandits residing in the cave",
     "tags": ["desert", "cave", "bandits", "hideout"]
   },
   {
-    "id": 15, "name": "se bee hive",
+    "id": 16, "name": "se bee hive",
     "source": "coords from Ruined Olmic City side", "coords": "774 -477",
     "info": "A small lonely hive hidden among the spike around the olmic city.",
     "tags": ["se", "bee", "beehive"]
   },
   {
-    "id": 16, "name": "ruined olmic city curious starers cave",
+    "id": 17, "name": "ruined olmic city curious starers cave",
     "source": "coords", "coords": "490 -325",
     "info": "a small cave / hole above some ruins behind the ruined olmic city, when you enter your character will be frozen and a group of curious starrers will appear and encircle you, after a few seconds you will be teleported in a secret cave above the first one with 3 tier; <b>BUGGED<b>",
     "tags": ["ruined_olmic_city", "cave", "olm", "curious_starres"]
   },
   {
-    "id": 17, "name": "ruined olmic city underground",
+    "id": 18, "name": "ruined olmic city underground",
     "source": "coords<br>(entrance)", "coords": "510 -475",
     "info": "Medium size underground below one of the building. Contains 3 cells. Dern influence clearly visible",
     "tags": ["ruined_olmic_city", "olm", "underground"]
   },
   {
-    "id": 18, "name": "ruined olmic city temple side",
+    "id": 19, "name": "ruined olmic city temple side",
     "source": "coords (entrance)<br>tunnel at 425 -630", "coords": "525 -630",
     "info": "Massive building inside the mountain. There is tunnel with fallen ceiling",
     "tags": ["ruined_olmic_city", "olm", "underground"]
   },
   {
-    "id": 19, "name": "ruined olmic city underground altar",
+    "id": 20, "name": "ruined olmic city underground altar",
     "source": "coords<br>entrance at 667 -605", "coords": "676 -613",
     "info": "Small underground altar",
     "tags": ["ruined_olmic_city", "olm", "underground", "altar"]
   },
   {
-    "id": 20, "name": "avos territory giant eggs",
+    "id": 21, "name": "avos territory giant eggs",
     "source": "coords", "coords": "-1691 162 -3365",
     "info": "Three massive eggs in a large nest on a hillside",
     "tags": ["avos_territory", "eggs", "nest"]
   },
   {
-    "id": 21, "name": "avos territory bloody cave",
+    "id": 22, "name": "avos territory bloody cave",
     "source": "coords", "coords": "-1740 -3320",
     "info": "A large cave full of blood and skulls in Avos territory",
     "tags": ["avos_territory", "cave", "blood"]
   },
 
   {
-    "id": 22, "name": "avos territory large bloody cave",
+    "id": 23, "name": "avos territory large bloody cave",
     "source": "coords", "coords": "-1957 120 -3297",
     "info": "You can enter this cave by falling through a large hole in a house above it. There also exists a side entrance. The cave is full of blood and flesh.",
     "tags": ["avos_territory", "cave", "blood"]
   },
   {
-    "id": 23, "name": "avos territory ancient ruins under uth shrine",
+    "id": 24, "name": "avos territory ancient ruins under uth shrine",
     "source": "coords<br>entrance at -1972 80 -3282", "coords": "-1895 77 -3259",
     "info": "Old stone brick ruins and archways directly under the Uth shrine. New, wooden scaffolding is found nearby, with a campsite closer to the cave's entrance full of mechs.",
     "tags": ["avos_territory", "cave", "ruin", "uth_shrine"]
   },
   {
-    "id": 24, "name": "avos territory cage cave",
+    "id": 25, "name": "avos territory cage cave",
     "source": "coords", "coords": "-1867 77 -3173",
     "info": "A large, open cave with many cages hanging from the ceiling. There are spikes, skulls and blood around the area. The entrance is guarded by a row of Avos warriors. Looking at the structure, it seems that when the prisoners die, the floors of the cages are opened, and the bodies are left in piles under the cages.",
     "tags": ["avos_territory", "cave", "cage"]
   },
   {
-    "id": 25, "name": "cotl abandoned tower",
+    "id": 26, "name": "cotl abandoned tower",
     "source": "coords", "coords": "90 -4447",
     "info": "Abandoned tower in CotL",
     "tags": ["cotl", "tower"]
   },
   {
-    "id": 26, "name": "cotl bantisu air temple beehive",
+    "id": 27, "name": "cotl bantisu air temple beehive",
     "source": "coords", "coords": "489 -4690",
     "info": "Beehive in Bantishu Air temple",
     "tags": ["cotl", "bantishu_air_temple", "beehive"]
   },
   {
-    "id": 27, "name": "cotl bantishu temple cave tree",
+    "id": 28, "name": "cotl bantishu temple cave tree",
     "source": "coords<br>entrance at 495 -4688", "coords": "475 -4735",
     "info": "A large tree in massive cave in the Bantishu Air Temple",
     "tags": ["cotl", "bantishu_air_temple", "cave", "tree"]
   },
   {
-    "id": 28, "name": "cotl bantishu air temple passage",
+    "id": 29, "name": "cotl bantishu air temple passage",
     "source": "coords<br>(entrance)", "coords": "577 -4816",
     "info": "Big passage from the air temple into the canyons",
     "tags": ["cotl", "bantishu_air_temple", "passage"]
   },
   {
-    "id": 29, "name": "cotl mining site",
+    "id": 30, "name": "cotl mining site",
     "source": "coords<br>(elevator)", "coords": "740 -5210",
     "info": "A large mining site",
     "tags": ["cotl", "mine", "cave"]
   },
   {
-    "id": 30, "name": "eldritch outlook sculpted wall",
+    "id": 31, "name": "eldritch outlook sculpted wall",
     "source": "coords", "coords": "1410 -700",
     "info": "The walls of the EO Contains small statues, this one seems to represent a humanoid being riding a horse",
     "tags": ["se", "eo", "olm"]
   },
   {
-    "id": 31, "name": "wynn-mesa mountains grave",
+    "id": 32, "name": "wynn-mesa mountains grave",
     "source": "coords<br>at the top of the mountains", "coords": "986 -1312",
     "info": "A little gave with wooden cross and sign saying: \"To chime and bell, To solitude, I bid thee, Farewell.\"",
     "tags": ["wynn", "mountains", "grave"]
   },
   {
-    "id": 32, "name": "abandoned mines mountains camp",
+    "id": 33, "name": "abandoned mines mountains camp",
     "source": "coords<br>up in the mountains", "coords": "868 -1223",
     "info": "Small abandoned camp in the mountains",
     "tags": ["wynn", "abandoned_mines", "mountains", "camp", "abandoned"]
   },
   {
-    "id": 33, "name": "corrupted village ruined houses",
+    "id": 34, "name": "corrupted village ruined houses",
     "source": "coords<br>on top of the mountains", "coords": "280 -1035",
     "info": "3 small ruined houses near Corrupted Village",
     "tags": ["wynn", "corrupted_village", "mountains", "ruin", "house"]
   },
   {
-    "id": 34, "name": "ruined olmic city altar",
+    "id": 35, "name": "ruined olmic city altar",
     "source": "coords", "coords": "514 99 -422",
     "info": "What looks to be a withered skull behind bars, maybe a prison, which what looks like a key holder to open the doors",
     "tags": ["ruined_olmic_city", "altar"]
   },
   {
-    "id": 35, "name": "se_curious starrers area (TOR quest)",
+    "id": 36, "name": "se_curious starrers area (TOR quest)",
     "source": "coords<br>entrance at 695 -550", "coords": "742 83 -581",
     "info": " When you walk up into the little hole in the wall three curious starrers will apear behind you for only a seccond. Strange how this occurrence happened elsewhere",
     "tags": ["ruined_olmic_city", "olm", "curious_starrers"]
   },
   {
-    "id": 36, "name": "se withered flower",
+    "id": 37, "name": "se withered flower",
     "source": "coords<br>entrance at 650 -805", "coords": "638 84 -814",
     "info": "What looks to be a withered flower in a cave. Its the only flower there",
     "tags": ["se", "abandoned_mines_se"]
   },
   {
-    "id": 37, "name": "se darkness spikes with red substance",
+    "id": 38, "name": "se darkness spikes with red substance",
     "source": "coords", "coords": "539 20 -854",
     "info": "These darkness spikes right before the Olmic City are connected to darkness swirls, and at the contact point, some sort of red substance is formed",
     "tags": ["se", "darkness", "spike"]
