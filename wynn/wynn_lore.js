@@ -92,6 +92,32 @@ function showAllEntries() {
     }
 }
 
+function allTags() {
+    resetTables();
+
+    // ----- get all unique tags -----
+    let all_tags = new Set();
+    for (info in lore) {
+        for (_tag in lore[info]["tags"]) { all_tags.add(lore[info]["tags"][_tag]); }
+    }
+    // ----- create sorted array from the set -----
+    all_tags = Array.from(all_tags).sort();
+
+    // ----- create table with tags -----
+    let table = document.getElementById("tag_table");
+    // ----- go by rows -----
+    for (let row_iter=0; row_iter <= Math.floor((all_tags.length)/10); row_iter++) {
+        let row = table.insertRow(row_iter);
+
+        // ----- go by columns -----
+        for (let cell_iter=0; cell_iter < 10; cell_iter++) {
+            if (!all_tags[(row_iter*10)+cell_iter]) { row.insertCell(cell_iter).innerHTML = ""; }
+            else { row.insertCell(cell_iter).innerHTML = all_tags[(row_iter*10)+cell_iter]; }
+        }
+    }
+}
+
+
 function addHeaderLine() {
     let table = document.getElementById("entries");
 
@@ -116,9 +142,10 @@ function addToTable(info) {
     row.insertCell(3).innerHTML = info["coords"];
     row.insertCell(4).innerHTML = info["info"];
     row.insertCell(5).innerHTML = info["tags"].join("<br>");
-    row.insertCell(6).innerHTML = '<img src="' + "wynn_images/"
-        + info["name"].replaceAll(" ", "_")
-        + '.png" style="width:160px;height:90px;">';
+    let img_name = 'wynn_images/' + info["name"].replaceAll(" ", "_") + '.png'; // so I can save some code
+    row.insertCell(6).innerHTML = '<img src="' + img_name + '"'
+        + ' style="width:160px;height:90px;"'
+        + ' onclick="window.open(\'' + img_name + '\')">';
 }
 
 
@@ -132,30 +159,4 @@ function resetTables() {
     // tags
     table = document.getElementById("tag_table");
     while (table.rows.length > 0) { table.deleteRow(0); }
-}
-
-
-function allTags() {
-    resetTables();
-
-    // ----- get all unique tags -----
-    let all_tags = new Set();
-    for (info in lore) {
-        for (_tag in lore[info]["tags"]) { all_tags.add(lore[info]["tags"][_tag]); }
-    }
-    // ----- create sorted array from the set -----
-    all_tags = Array.from(all_tags).sort();
-
-    // ----- create table with tags -----
-    let table = document.getElementById("tag_table");
-    // ----- go by rows -----
-    for (let row_iter=0; row_iter <= Math.floor((all_tags.length)/10); row_iter++) {
-        let row = table.insertRow(row_iter);
-
-        // ----- go by columns -----
-        for (let cell_iter=0; cell_iter < 10; cell_iter++) {
-            if (!all_tags[(row_iter*10)+cell_iter]) { row.insertCell(cell_iter).innerHTML = ""; }
-            else { row.insertCell(cell_iter).innerHTML = all_tags[(row_iter*10)+cell_iter]; }
-        }
-    }
 }
