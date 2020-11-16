@@ -7,7 +7,7 @@ $.getJSON( "wynn_lore.json", function( json ) {
 });
 
 
-function getLS() {
+function searchEntries() {
     // get the table
     const table = document.getElementById("entries");
 
