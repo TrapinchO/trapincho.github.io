@@ -201,7 +201,7 @@
   },
   {
     "id": 34, "name": "corrupted village ruined houses",
-    "source": "coords<br>on top of the mountains", "coords": "280 -1035",
+    "source": "coords<br>up in the mountains", "coords": "280 -1035",
     "info": "3 small ruined houses near Corrupted Village",
     "tags": ["wynn", "corrupted_village", "mountains", "ruin", "house"]
   },
@@ -228,6 +228,66 @@
     "source": "coords", "coords": "539 20 -854",
     "info": "These darkness spikes right before the Olmic City are connected to darkness swirls, and at the contact point, some sort of red substance is formed",
     "tags": ["se", "darkness", "spike"]
+  },
+  {
+    "id": 39, "name": "mesa village burned down",
+    "source": "coords<br>up in the mountains", "coords": "1345 -1220",
+    "info": "Small settlement burnt down",
+    "tags": ["mesa", "settelemnt", "burned"]
+  },
+  {
+    "id": 40, "name": "mesa mountains small settlement",
+    "source": "coords<br>up in the mountains", "coords": "1510 -1310",
+    "info": "A collection of few large tents",
+    "tags": ["mesa", "mountains", "settlement", "tents"]
+  },
+  {
+    "id": 41, "name": "mesa mountains abandoned house",
+    "source": "coords<br>in the mountains", "coords": "1470 -1360",
+    "info": "small abandoned house in the mountains of Mesa",
+    "tags": ["mesa", "abandoned"]
+  },
+  {
+    "id": 42, "name": "mesa mountains abandoned mining site",
+    "source": "coords<br>in the mountains", "coords": "1485 -1520",
+    "info": "Abandoned mining site in the mountains of mesa",
+    "tags": ["mesa", "mountains", "abandoned", "mining_site"]
+  },
+  {
+    "id": 43, "name": "mesa mountains exiled tribe members camp",
+    "source": "coords<br>in the mountains", "coords": "1485 -1520",
+    "info": "Small camp of exiled tribe members",
+    "tags": ["mesa", "camp", "tribe"]
+  },
+  {
+    "id": 44, "name": "iron mine camp with chest in waterfall",
+    "source": "coords", "coords": "663 -5314",
+    "info": "An iron mine in Canyon of the lost that leads to harpy cave with hidden chest in water fall",
+    "tags": ["camp", "mountains", "mine"]
+  },
+  {
+    "id": 45, "name": "cotl empty camp",
+    "source": "coords<br>entrance at 722, 73, -5234", "coords": "644 96 -5262",
+    "info": "An empty camp with no enemies but there is blood and alot of brewing stands. There also is a long cave leading to a skeleton",
+    "tags": ["cotl", "mountains", "camp", "abandoned"]
+  },
+  {
+    "id": 46, "name": "ice canyon ohms grave",
+    "source": "coords<br>in the mountains", "coords": "-130 93 -280",
+    "info": "Grave of Ohms (NOT Olm). It used to open by throwing 'mechanical key' in a hopper (white carpet), not non-functional<br>UPDATE: it can be opened by throwing hp pot into the hopper. KEy can be obtained by killing golems below",
+    "tags": ["ice_canyon", "ohm", "grave", "broken"]
+  },
+  {
+    "id": 47, "name": "ruined olmic city entrace tor quest cave",
+    "source": "coords", "coords": "696 -532",
+    "info": "Entrance to quest area (The Olmic Rune). Has 2 statues with swords with them",
+    "tags": ["ruined_olmic_city", "statues"]
+  },
+  {
+    "id": 48, "name": "cotl hidden grave",
+    "source": "coords<br>press the button", "coords": "521 -5067",
+    "info": "A forgotten grave hidden in the walls of the canyon, it is marked with a faded message that reads:<br>It (i)s in o(u)r da(r)kes(t) mo(m)en(t)s.(.).<br>T(h)at we mu(s)t foc(u)s to se(e) the lig(h)t.",
+    "tags": ["cotl", "hidden", "grave"]
   },
 
 
