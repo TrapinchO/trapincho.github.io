@@ -80,12 +80,13 @@ function addToTable(info) {
 
     let rowCount = table.rows.length;
     let row = table.insertRow(rowCount);
-    row.insertCell(0).innerHTML = info["name"];
-    row.insertCell(1).innerHTML = info["source"];
-    row.insertCell(2).innerHTML = info["coords"];
-    row.insertCell(3).innerHTML = info["info"];
-    row.insertCell(4).innerHTML = info["tags"].join("<br>");
-    row.insertCell(5).innerHTML = '<img src="' + "wynn_images/"
+    row.insertCell(0).innerHTML = info["id"];
+    row.insertCell(1).innerHTML = info["name"];
+    row.insertCell(2).innerHTML = info["source"];
+    row.insertCell(3).innerHTML = info["coords"];
+    row.insertCell(4).innerHTML = info["info"];
+    row.insertCell(5).innerHTML = info["tags"].join("<br>");
+    row.insertCell(6).innerHTML = '<img src="' + "wynn_images/"
         + info["name"].replaceAll(" ", "_")
         + '.png" style="width:160px;height:90px;">';
 }
