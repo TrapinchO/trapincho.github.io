@@ -8,7 +8,7 @@
 	<link href="wynn_lore.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 </head>
-<body onload="console.log('Page loaded on version 1.7.0');">
+<body onload="console.log('Page loaded on version 1.7.1');">
 
 	<h1><b>Database of lore sources for Wynncraft</b></h1>
 	<h2><a href="https://github.com/TrapinchO/trapincho.github.io">Github repository page</a></h2>
@@ -21,6 +21,7 @@
 	<p><b>If you do not know the name of the entry but know topic: </b> type the tags into "tags" text field and click "search"</p>
 	<p><b>If you know nothing: </b> click "show all"</p>
 	<b>NOTE for using tags: 2+ word tags have to be conected by "_" example: NOT "Time Valley" YES "Time_Valley"</b>
+	<p>If you click on any image it opens a new tab with the image in full-size</p>
 
 	<br><br>
 	Id: <input type="number" id="search_id"> <br>
@@ -29,6 +30,7 @@
 	<button onclick="searchEntries()">search</button>
 	<button onclick="showAllEntries()">show all entries</button>
 	<button onclick="allTags()">show all tags</button>
+	<button onclick="clearTables()">clear</button>
 
 	<p id="found"></p>
 

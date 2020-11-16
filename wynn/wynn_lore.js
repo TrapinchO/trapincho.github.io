@@ -160,3 +160,8 @@ function resetTables() {
     table = document.getElementById("tag_table");
     while (table.rows.length > 0) { table.deleteRow(0); }
 }
+
+
+function clearTables() {
+    resetTables();
+}
