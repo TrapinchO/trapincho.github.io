@@ -56,13 +56,13 @@
   },
   {
     "id": 10, "name": "abandoned corkus sewers",
-    "source": "coords<br>(at the beach)", "coords": "-1751 -3369",
+    "source": "coords<br>at the beach", "coords": "-1751 -3369",
     "info": " Long disused this section of Corkus sewers has become home to a great amount of gross slime and broken pipes. It is not known why it was abandoned, however it may be because it is built below Avos land.",
     "tags": ["corkus", "sewer", "abandoned"]
   },
   {
     "id": 11, "name": "rodoroc statue prison",
-    "source": "coords<br>(on top of the statue)", "coords": "1096, -5336",
+    "source": "coords<br>on top of the statue", "coords": "1096, -5336",
     "info": "Buried in one of the giant Dwarven statues guarding the entrance to the heights, there lies a long stairwell, that leads to a now unused prison. Likely a relic from the war, its cells are marked by their inmates' threat levels.",
     "tags": ["rodoroc", "prison", "abandoned"]
   },
@@ -104,19 +104,19 @@
   },
   {
     "id": 17, "name": "ruined olmic city underground",
-    "source": "entrance at coords", "coords": "510 -475",
+    "source": "coords<br>(entrance)", "coords": "510 -475",
     "info": "Medium size underground below one of the building. Contains 3 cells. Dern influence clearly visible",
     "tags": ["ruined_olmic_city", "olm", "underground"]
   },
   {
     "id": 18, "name": "ruined olmic city temple side",
-    "source": "location at coords<br>tunnel at 425 -630", "coords": "525 -630",
+    "source": "coords (entrance)<br>tunnel at 425 -630", "coords": "525 -630",
     "info": "Massive building inside the mountain. There is tunnel with fallen ceiling",
     "tags": ["ruined_olmic_city", "olm", "underground"]
   },
   {
     "id": 19, "name": "ruined olmic city underground altar",
-    "source": "coords, entrance at 667 -605", "coords": "676 -613",
+    "source": "coords<br>entrance at 667 -605", "coords": "676 -613",
     "info": "Small underground altar",
     "tags": ["ruined_olmic_city", "olm", "underground", "altar"]
   },
@@ -141,7 +141,7 @@
   },
   {
     "id": 23, "name": "avos territory ancient ruins under uth shrine",
-    "source": "coords (entrance -1972 80 -3282)", "coords": "-1895 77 -3259",
+    "source": "coords<br>entrance at -1972 80 -3282", "coords": "-1895 77 -3259",
     "info": "Old stone brick ruins and archways directly under the Uth shrine. New, wooden scaffolding is found nearby, with a campsite closer to the cave's entrance full of mechs.",
     "tags": ["avos_territory", "cave", "ruin", "uth_shrine"]
   },
@@ -165,19 +165,19 @@
   },
   {
     "id": 27, "name": "cotl bantishu temple cave tree",
-    "source": "coords, entrance at 495 -4688", "coords": "475 -4735",
+    "source": "coords<br>entrance at 495 -4688", "coords": "475 -4735",
     "info": "A large tree in massive cave in the Bantishu Air Temple",
     "tags": ["cotl", "bantishu_air_temple", "cave", "tree"]
   },
   {
     "id": 28, "name": "cotl bantishu air temple passage",
-    "source": "entrance at coords", "coords": "577 -4816",
+    "source": "coords<br>(entrance)", "coords": "577 -4816",
     "info": "Big passage from the air temple into the canyons",
     "tags": ["cotl", "bantishu_air_temple", "passage"]
   },
   {
     "id": 29, "name": "cotl mining site",
-    "source": "elevator at coords", "coords": "740 -5210",
+    "source": "coords<br>(elevator)", "coords": "740 -5210",
     "info": "A large mining site",
     "tags": ["cotl", "mine", "cave"]
   },
@@ -189,19 +189,19 @@
   },
   {
     "id": 31, "name": "wynn-mesa mountains grave",
-    "source": "coords (at the top of the mountains)", "coords": "986 -1312",
+    "source": "coords<br>at the top of the mountains", "coords": "986 -1312",
     "info": "A little gave with wooden cross and sign saying: \"To chime and bell, To solitude, I bid thee, Farewell.\"",
     "tags": ["wynn", "mountains", "grave"]
   },
   {
     "id": 32, "name": "abandoned mines mountains camp",
-    "source": "coords (up in the mountains)", "coords": "868 -1223",
+    "source": "coords<br>up in the mountains", "coords": "868 -1223",
     "info": "Small abandoned camp in the mountains",
     "tags": ["wynn", "abandoned_mines", "mountains", "camp", "abandoned"]
   },
   {
     "id": 33, "name": "corrupted village ruined houses",
-    "source": "coords (on top of the mountains)", "coords": "280 -1035",
+    "source": "coords<br>on top of the mountains", "coords": "280 -1035",
     "info": "3 small ruined houses near Corrupted Village",
     "tags": ["wynn", "corrupted_village", "mountains", "ruin", "house"]
   },
@@ -213,13 +213,13 @@
   },
   {
     "id": 35, "name": "se_curious starrers area (TOR quest)",
-    "source": "coords (entrance at 695 -550)", "coords": "742 83 -581",
+    "source": "coords<br>entrance at 695 -550", "coords": "742 83 -581",
     "info": " When you walk up into the little hole in the wall three curious starrers will apear behind you for only a seccond. Strange how this occurrence happened elsewhere",
     "tags": ["ruined_olmic_city", "olm", "curious_starrers"]
   },
   {
     "id": 36, "name": "se withered flower",
-    "source": "coords (entrance at 650 -805)", "coords": "638 84 -814",
+    "source": "coords<br>entrance at 650 -805", "coords": "638 84 -814",
     "info": "What looks to be a withered flower in a cave. Its the only flower there",
     "tags": ["se", "abandoned_mines_se"]
   },
