@@ -10,3 +10,10 @@ th, td {
   padding: 10px;
   text-align: left;
 }
+
+/*
+// makes image bigger when hovering over it
+img:hover {
+    transform: scale(1.5);
+}
+*/
