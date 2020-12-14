@@ -290,63 +290,64 @@
     "tags": ["cotl", "hidden", "grave"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 49, "name": "mh cotl exit crystal valley",
+    "source": "entrance at 1050 -5200", "coords": "965 -5090",
+    "info": "valley south of the cotl's exit containing many crystals and a cave under a lake",
+    "tags": ["cotl", "valley", "cave", "crystal", "lake"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 50, "name": "cotl freed soul outlook",
+    "source": "entrance at 440 -5170", "coords": "435 -5150",
+    "info": "cave with bugbear leading to outlook with one freed soul mob",
+    "tags": ["cotl", "bugbear", "cave", "unique_mob", "soul"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
-  },{
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 51, "name": "cotl bugbear wall cave",
+    "source": "coords", "coords": "500 -5255",
+    "info": "cave with bugbears and a wall with symbols",
+    "tags": ["cotl", "bugbear", "cave", "text"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 52, "name": "cotl deserter pit",
+    "source": "coords", "coords": "500 -5300",
+    "info": "pit with deserters and T4 loot chest, must be traversed to escape",
+    "tags": ["cotl", "cave", "deserter", "pit", "loot_chest", "humans"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 53, "name": "ocean deserted farm islands",
+    "source": "East of Corkus island, near Zhight island and Pirate Cove", "coords": "-910, -2865",
+    "info": "A group of small islands with deserted farm ruins. Agressive mobs called 'Squid Vicious' spawn in the middle",
+    "tags": ["ocean", "farm", "island", "ruins", "squid"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 54, "name":"ocean deserted island beehive",
+    "source": "coords<br>in the highest floor", "coords": "-852 -2862",
+    "info": "A beehive",
+    "tags": ["ocean", "island", "bee", "beehive"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 55, "name": "ocean raised wooden platform",
+    "source": "East of Avos territory, south of Volcanic Isles", "coords": "-907, -3276",
+    "info": "An overgrown wooden plateau in the middle of an ocean. A bird head can be found on top, possibly related to the nearby Avos. Similar platforms are found northeast in the middle of the Ocean and near the Gavel coastline.<br>TrapinchO's note: My only question is, how the f***",
+    "tags": ["ocean", "overgrown", "platform"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 56, "name": "ocean raised wooden platform 2",
+    "source": "In the middle of the ocean", "coords": "-188, -3562",
+    "info": "An overgrown wooden plateau in the middle of an ocean, with yellow banners on it. Similar platforms are found near the Avos territory and near the Gavel coastline.",
+    "tags": ["ocean", "overgrown", "platform"]
   },
   {
-    "id": 0, "name": "",
-    "source": "", "coords": "",
-    "info": "",
-    "tags": []
+    "id": 57, "name": "ocean raised wooden platform 3",
+    "source": "Near Gavel coastline", "coords": "629, -4105",
+    "info": "An overgrown wooden plateau in the middle of an ocean, with blue banners on it. Similar platforms are found southwest near the Avos territory and in the middle of the ocean.",
+    "tags": ["ocean","overgrown","platform","gavel","coastline","gavel_coastline"]
+  },
+  {
+    "id": 58, "name": "ocean shipwrecked man camp",
+    "source": "Southwest of Selchar", "coords": "-30, -2850",
+    "info": "A camp with shipwrecked men, a tent, and a cooking pot",
+    "tags": ["ocean", "selchar", "shipwreck", "camp"]
   },
 
 
