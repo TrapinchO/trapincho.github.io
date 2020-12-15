@@ -105,6 +105,7 @@ function allTags() {
 
     // ----- create table with tags -----
     let table = document.getElementById("tag_table");
+    table.border = 3;
     // ----- go by rows -----
     for (let row_iter=0; row_iter <= Math.floor((all_tags.length)/10); row_iter++) {
         let row = table.insertRow(row_iter);
@@ -120,6 +121,7 @@ function allTags() {
 
 function addHeaderLine() {
     let table = document.getElementById("entries");
+    table.border = 3;
 
     let row = table.insertRow(0);
     row.insertCell(0).innerHTML = "<b>ID</b>";
@@ -155,9 +157,11 @@ function resetTables() {
     // ----- reset -----
     // lore database
     let table = document.getElementById("entries");
+    table.border = 0;
     while (table.rows.length > 0) { table.deleteRow(0); }
     // tags
     table = document.getElementById("tag_table");
+    table.border = 0;
     while (table.rows.length > 0) { table.deleteRow(0); }
 }
 
