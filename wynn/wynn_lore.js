@@ -45,7 +45,8 @@ function searchEntries() {
     else if (search_name) {
         addHeaderLine();
         for (info in lore) {
-            if (!lore[info]["name"].localeCompare(search_name)) {
+            let lore_name = lore[info]["name"].toLowerCase();
+            if (!lore_name.localeCompare(search_name)) {
                 // put it into table
                 addToTable(lore[info]);
                 return;
