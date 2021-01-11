@@ -145,7 +145,7 @@ function addToTable(info) {
     row.insertCell(3).innerHTML = info["coords"];
     row.insertCell(4).innerHTML = info["info"];
     row.insertCell(5).innerHTML = info["tags"].join("<br>");
-    let img_name = 'wynn_images/' + info["name"].replaceAll(" ", "_") + '.png'; // so I can save some code
+    let img_name = 'wynn_images/' + info["name"].replaceAll(" ", "_").toLowerCase() + '.png'; // so I can save some code
     row.insertCell(6).innerHTML = '<img src="' + img_name + '"'
         + ' style="width:160px;height:90px;"'
         + ' onclick="window.open(\'' + img_name + '\')">';
