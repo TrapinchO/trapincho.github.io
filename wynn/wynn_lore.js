@@ -10,7 +10,7 @@ $.getJSON( "wynn_lore.json", function( json ) {
 * Function for page initialisation
 */
 function init() {
-    console.log('Page loaded on version 1.8.0');
+    console.log('Page loaded on version 1.8.1');
     resetPage();
 }
 
@@ -51,7 +51,7 @@ function searchEntries() {
     // if tag not empty -> search tag
     // name search has lowest priority
     else if (search_tags) {
-        showEntriesByTags(search_tags) // search by tags
+        showEntryByTags(search_tags) // search by tags
     }
     // search boxes are empty
     else {
@@ -83,7 +83,7 @@ function showEntryByName(search_name) {
 /**
 * List all entries with given tags
 */
-function showEntriesByTags(search_tags) {
+function showEntryByTags(search_tags) {
     search_tags = search_tags.split(" "); // make it an array
 
     let anyEntry = false; // check for entries
@@ -107,7 +107,7 @@ function showEntriesByTags(search_tags) {
             addRowToTable(info);
         }
     }
-    if (!anyEntry) {
+    if (!anyEntry) { // if no entries were found
         resetPage();
         document.getElementById('found').innerHTML = "No entries found";
     }
@@ -130,7 +130,7 @@ function showAllEntries() {
 /**
 * Show all tags
 */
-function allTags() {
+function showAllTags() {
     resetPage();
 
     // ----- get all unique tags -----
@@ -203,11 +203,11 @@ function resetPage() {
     // reset
     document.getElementById('found').innerHTML = "";
     // ----- reset -----
-    // lore database
+    // lore table
     let table = document.getElementById("entries");
     table.border = 0;
     while (table.rows.length > 0) { table.deleteRow(0); }
-    // tags
+    // tags table
     table = document.getElementById("tag_table");
     table.border = 0;
     while (table.rows.length > 0) { table.deleteRow(0); }
