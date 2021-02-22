@@ -8,7 +8,7 @@
 	<link href="wynn_lore.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 </head>
-<body onload="console.log('Page loaded on version 1.7.5');">
+<body onload="init()">
 
 	<h1><b>Database of lore sources for Wynncraft</b></h1>
 	<h2><a href="https://github.com/TrapinchO/trapincho.github.io">Github repository page</a></h2>
@@ -30,7 +30,7 @@
 	<button onclick="searchEntries()">search</button>
 	<button onclick="showAllEntries()">show all entries</button>
 	<button onclick="allTags()">show all tags</button>
-	<button onclick="clearTables()">clear</button>
+	<button onclick="resetPage()">clear</button>
 
 	<p id="found"></p>
 

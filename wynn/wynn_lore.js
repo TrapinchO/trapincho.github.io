@@ -6,12 +6,22 @@ $.getJSON( "wynn_lore.json", function( json ) {
     //console.log( "JSON Data received: " + JSON.stringify(lore));
 });
 
+/**
+* Function for page initialisation
+*/
+function init() {
+    console.log('Page loaded on version 1.7.6');
+    resetPage();
+}
 
+/**
+*
+*/
 function searchEntries() {
     // get the table
     const table = document.getElementById("entries");
 
-    resetTables();
+    resetPage();
 
     // search by id
     const search_id = parseInt(document.getElementById('search_id').value.toLowerCase());
@@ -54,7 +64,6 @@ function searchEntries() {
         }
         document.getElementById('found').innerHTML = "No entry named \"" + search_name + "\" was found, searching by tags";
     }
-    addHeaderLine();
 
     search_tags = search_tags.split(" "); // make it an array
 
@@ -79,12 +88,18 @@ function searchEntries() {
             addToTable(info);
         }
     }
-    if (!ls) { document.getElementById('found').innerHTML = "No entries found"; }
+    if (!ls) {
+        resetPage();
+        document.getElementById('found').innerHTML = "No entries found";
+    }
 }
 
 
+/**
+*
+*/
 function showAllEntries() {
-    resetTables();
+    resetPage();
     addHeaderLine();
 
     // put info on table
@@ -93,8 +108,12 @@ function showAllEntries() {
     }
 }
 
+
+/**
+*
+*/
 function allTags() {
-    resetTables();
+    resetPage();
 
     // ----- get all unique tags -----
     let all_tags = new Set();
@@ -120,6 +139,9 @@ function allTags() {
 }
 
 
+/**
+*
+*/
 function addHeaderLine() {
     let table = document.getElementById("entries");
     table.border = 3;
@@ -134,6 +156,10 @@ function addHeaderLine() {
     row.insertCell(6).innerHTML = "<b>Images</b>";
 }
 
+
+/**
+*
+*/
 function addToTable(info) {
     let table = document.getElementById("entries");
 
@@ -152,7 +178,10 @@ function addToTable(info) {
 }
 
 
-function resetTables() {
+/**
+*
+*/
+function resetPage() {
     // reset
     document.getElementById('found').innerHTML = "";
     // ----- reset -----
@@ -164,9 +193,4 @@ function resetTables() {
     table = document.getElementById("tag_table");
     table.border = 0;
     while (table.rows.length > 0) { table.deleteRow(0); }
-}
-
-
-function clearTables() {
-    resetTables();
 }
