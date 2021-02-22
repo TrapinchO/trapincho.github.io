@@ -10,12 +10,12 @@ $.getJSON( "wynn_lore.json", function( json ) {
 * Function for page initialisation
 */
 function init() {
-    console.log('Page loaded on version 1.7.6');
+    console.log('Page loaded on version 1.8.0');
     resetPage();
 }
 
 /**
-*
+* Search for entries
 */
 function searchEntries() {
     // get the table
@@ -38,36 +38,57 @@ function searchEntries() {
     // search by tags
     let search_tags = document.getElementById('search_tags').value.toLowerCase();
 
-    // if all empty -> return
-    if (!search_tags && !search_name && !search_id) {
-        document.getElementById('found').innerHTML = "Search boxes are empty";
-        return;
-    }
     // if id field is not empty
-    // name search has the highest priority
-    else if (search_id) {
-        addHeaderLine();
-        addToTable(lore[search_id-1]);
-        return;
+    // id search has the highest priority
+    if (search_id) {
+        showEntryById(search_id)
+
+        //addHeaderLine();
+        //addRowToTable(lore[search_id-1]);
     }
     // if name not empty -> search name
     // name search has higher priority
     else if (search_name) {
-        addHeaderLine();
-        for (info in lore) {
-            let lore_name = lore[info]["name"].toLowerCase();
-            if (!lore_name.localeCompare(search_name)) {
-                // put it into table
-                addToTable(lore[info]);
-                return;
-            }
-        }
-        document.getElementById('found').innerHTML = "No entry named \"" + search_name + "\" was found, searching by tags";
+        showEntryByName(search_name)
     }
 
+    else if (search_tags) {
+        showEntriesByTags(search_tags) // search by tags
+    }
+
+    else {
+        document.getElementById('found').innerHTML = "Search boxes are empty";
+    }
+}
+
+function showEntryById(search_id) {
+    addHeaderLine();
+    addRowToTable(lore[search_id-1]);
+}
+
+/**
+* Show entry with given name
+*/
+function showEntryByName(search_name) {
+    addHeaderLine();
+    for (info in lore) {
+        let lore_name = lore[info]["name"].toLowerCase();
+        if (!lore_name.localeCompare(search_name)) {
+        // put it into table
+        addRowToTable(lore[info]);
+        return;
+        }
+    }
+    document.getElementById('found').innerHTML = "No entry named \"" + search_name + "\" was found, searching by tags";
+}
+
+/**
+* List all entries with given tags
+*/
+function showEntriesByTags(search_tags) {
     search_tags = search_tags.split(" "); // make it an array
 
-    let ls = false; // check for entries
+    let anyEntry = false; // check for entries
     for (info in lore) {
         info = lore[info]; // gets the entry - json
 
@@ -84,19 +105,18 @@ function searchEntries() {
         }
         // else add it to string
         if (found) {
-            ls = true; // found entry
-            addToTable(info);
+            anyEntry = true; // found entry
+            addRowToTable(info);
         }
     }
-    if (!ls) {
+    if (!anyEntry) {
         resetPage();
         document.getElementById('found').innerHTML = "No entries found";
     }
 }
 
-
 /**
-*
+* Show all entries
 */
 function showAllEntries() {
     resetPage();
@@ -104,13 +124,13 @@ function showAllEntries() {
 
     // put info on table
     for (info in lore) {
-        addToTable(lore[info]);
+        addRowToTable(lore[info]);
     }
 }
 
 
 /**
-*
+* Show all tags
 */
 function allTags() {
     resetPage();
@@ -140,7 +160,7 @@ function allTags() {
 
 
 /**
-*
+* Add header line to the table
 */
 function addHeaderLine() {
     let table = document.getElementById("entries");
@@ -158,9 +178,9 @@ function addHeaderLine() {
 
 
 /**
-*
+* Add a row to table
 */
-function addToTable(info) {
+function addRowToTable(info) {
     let table = document.getElementById("entries");
 
     let rowCount = table.rows.length;
@@ -179,7 +199,7 @@ function addToTable(info) {
 
 
 /**
-*
+* Resets the tables and text below the guide
 */
 function resetPage() {
     // reset
