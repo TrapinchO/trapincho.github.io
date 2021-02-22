@@ -42,20 +42,18 @@ function searchEntries() {
     // id search has the highest priority
     if (search_id) {
         showEntryById(search_id)
-
-        //addHeaderLine();
-        //addRowToTable(lore[search_id-1]);
     }
     // if name not empty -> search name
     // name search has higher priority
     else if (search_name) {
         showEntryByName(search_name)
     }
-
+    // if tag not empty -> search tag
+    // name search has lowest priority
     else if (search_tags) {
         showEntriesByTags(search_tags) // search by tags
     }
-
+    // search boxes are empty
     else {
         document.getElementById('found').innerHTML = "Search boxes are empty";
     }
