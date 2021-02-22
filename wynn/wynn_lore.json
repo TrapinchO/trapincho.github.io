@@ -278,7 +278,7 @@
     "tags": ["ice_canyon", "ohm", "grave", "broken"]
   },
   {
-    "id": 47, "name": "Ruined Olmic City entrace TOR quest cave",
+    "id": 47, "name": "Ruined Olmic City entrance TOR quest cave",
     "source": "coords", "coords": "696 -532",
     "info": "Entrance to quest area (The Olmic Rune). Has 2 statues with swords with them",
     "tags": ["ruined_olmic_city", "statues"]
