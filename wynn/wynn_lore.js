@@ -10,7 +10,7 @@ $.getJSON( "wynn_lore.json", function( json ) {
 * Function for page initialisation
 */
 function init() {
-    console.log('Page loaded on version 1.9.0');
+    console.log('Page loaded on version 1.9.1');
     resetPage();
 }
 
@@ -68,12 +68,12 @@ function showEntryById(search_id) {
 * Show entry with given name
 */
 function showEntryByName(search_name) {
-    for (info in lore) {
-        const lore_name = lore[info]["name"].toLowerCase();
+    for (info of lore) {
+        const lore_name = info["name"].toLowerCase();
         if (!lore_name.localeCompare(search_name)) {
            // put it into table
            addHeaderLine();
-           addRowToTable(lore[info]);
+           addRowToTable(info);
             return;
         }
     }
@@ -89,12 +89,11 @@ function showEntryByTags(search_tags) {
     search_tags = search_tags.split(","); // make it an array
 
     let anyEntry = false; // check for entries
-    for (info in lore) {
-        info = lore[info]; // gets the entry - json
+    for (info of lore) { // iterates over entry list
 
         let found = true; // reset it
-        for (tag in search_tags) {
-            tag = search_tags[tag].trim(); // gets the tag - string
+        for (tag of search_tags) {
+            tag = tag.trim(); // gets the tag - string
             found = true; // reset it
 
             if (!tag) { continue; }
@@ -125,8 +124,8 @@ function showAllEntries() {
     addHeaderLine();
 
     // put info on table
-    for (info in lore) {
-        addRowToTable(lore[info]);
+    for (info of lore) {
+        addRowToTable(info);
     }
 }
 
@@ -139,8 +138,8 @@ function showAllTags() {
 
     // ----- get all unique tags -----
     let all_tags = new Set();
-    for (info in lore) {
-        for (_tag in lore[info]["tags"]) { all_tags.add(lore[info]["tags"][_tag]); }
+    for (info of lore) {
+        for (_tag in info["tags"]) { all_tags.add(info["tags"][_tag]); }
     }
     // ----- create sorted array from the set -----
     all_tags = Array.from(all_tags).sort();
