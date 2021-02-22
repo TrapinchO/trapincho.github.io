@@ -10,7 +10,7 @@ $.getJSON( "wynn_lore.json", function( json ) {
 * Function for page initialisation
 */
 function init() {
-    console.log('Page loaded on version 1.8.1');
+    console.log('Page loaded on version 1.9.0');
     resetPage();
 }
 
@@ -36,7 +36,7 @@ function searchEntries() {
     // search by name
     const search_name = document.getElementById('search_name').value.toLowerCase();
     // search by tags
-    let search_tags = document.getElementById('search_tags').value.toLowerCase();
+    const search_tags = document.getElementById('search_tags').value.toLowerCase();
 
     // if id field is not empty
     // id search has the highest priority
@@ -68,23 +68,25 @@ function showEntryById(search_id) {
 * Show entry with given name
 */
 function showEntryByName(search_name) {
-    addHeaderLine();
     for (info in lore) {
-        let lore_name = lore[info]["name"].toLowerCase();
+        const lore_name = lore[info]["name"].toLowerCase();
         if (!lore_name.localeCompare(search_name)) {
-        // put it into table
-        addRowToTable(lore[info]);
-        return;
+           // put it into table
+           addHeaderLine();
+           addRowToTable(lore[info]);
+            return;
         }
     }
-    document.getElementById('found').innerHTML = "No entry named \"" + search_name + "\" was found, searching by tags";
+    document.getElementById('found').innerHTML = "No entry named \"" + search_name + "\" was found";
 }
 
 /**
 * List all entries with given tags
 */
 function showEntryByTags(search_tags) {
-    search_tags = search_tags.split(" "); // make it an array
+    addHeaderLine();
+
+    search_tags = search_tags.split(","); // make it an array
 
     let anyEntry = false; // check for entries
     for (info in lore) {
@@ -92,8 +94,10 @@ function showEntryByTags(search_tags) {
 
         let found = true; // reset it
         for (tag in search_tags) {
+            tag = search_tags[tag].trim(); // gets the tag - string
             found = true; // reset it
-            tag = search_tags[tag]; // gets the tag - string
+
+            if (!tag) { continue; }
 
             // if not found break
             if (!info["tags"].includes(tag)) {
@@ -145,7 +149,7 @@ function showAllTags() {
     let table = document.getElementById("tag_table");
     table.border = 3;
     // ----- go by rows -----
-    for (let row_iter=0; row_iter <= Math.floor((all_tags.length)/10); row_iter++) {
+    for (let row_iter=0; row_iter <= Math.floor((all_tags.length)/10); row_iter++) {  // TODO: mess
         let row = table.insertRow(row_iter);
 
         // ----- go by columns -----
@@ -188,7 +192,7 @@ function addRowToTable(info) {
     row.insertCell(2).innerHTML = info["source"];
     row.insertCell(3).innerHTML = info["coords"];
     row.insertCell(4).innerHTML = info["info"];
-    row.insertCell(5).innerHTML = info["tags"].join("<br>");
+    row.insertCell(5).innerHTML = info["tags"].join(",<br>");
     let img_name = 'wynn_images/' + info["name"].replaceAll(" ", "_").toLowerCase() + '.png'; // so I can save some code
     row.insertCell(6).innerHTML = '<img src="' + img_name + '"'
         + ' style="width:160px;height:90px;"'

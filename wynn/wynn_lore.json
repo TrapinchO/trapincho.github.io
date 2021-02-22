@@ -3,8 +3,8 @@
   {
     "id": 1, "name": "Llevigar Plains creeper",
     "source": "coords<br>(entrance to the cave)", "coords": "-1497 42 -4773",
-    "info": "Creeper head together with tnt on a cave at llevingar plains",
-    "tags": ["llevigar_plains", "creeper", "cave"]
+    "info": "Creeper head together with tnt on a cave at Llevigar plains",
+    "tags": ["llevigar plains", "creeper", "cave"]
   },
   {
     "id": 2, "name": "Ragni torture area",
@@ -16,7 +16,7 @@
     "id": 3, "name": "Emerald Trail sewer trap",
     "source": "coords", "coords": "-494, -1616",
     "info": "A trap which leads into sewers with item frames and cells. Exits into a small house off the emerald trail.",
-    "tags": ["emerald_trail", "sewer_trap", "prison"]
+    "tags": ["emerald trail", "sewer trap", "prison"]
   },
   {
     "id": 4, "name": "Katoa Larkster pirate cave",
@@ -28,31 +28,31 @@
     "id": 5, "name": "Nivla Woods ritual site",
     "source": "coords", "coords": "-355, -1415",
     "info": "A glade surrounded by candles, looks ritualistic",
-    "tags": ["nivla", "nivla_woods", "road_to_time_valley"]
+    "tags": ["nivla", "nivla woods", "road to time valley"]
   },
   {
     "id": 6, "name": "Nivla Woods rose tree circle",
     "source": "coords", "coords": "-393, -1500",
     "info": "A circle of six charred tree stumps around a rose that judging by F3 has an armour stand in/on it",
-    "tags": ["nivla", "nivla_woods", "rose", "circle"]
+    "tags": ["nivla", "nivla woods", "rose", "circle"]
   },
   {
     "id": 7, "name": "Nivla outskirts building",
     "source": "coords", "coords": "-375, -1370",
     "info": " A stone building, not ruined, leading down to a mob-free quartz room.",
-    "tags": ["nivla", "nivla_woods", "building", "intact"]
+    "tags": ["nivla", "nivla woods", "building", "intact"]
   },
   {
     "id": 8, "name": "Time Valley crystal slots",
     "source": "coords", "coords": "-574, -1172",
     "info": "Here, on the front of the temple, you can see a large sapphire slot at the centre, three on the left, and two, with one empty slot, on the right.",
-    "tags": ["time_valley", "temple_of_time", "crystals"]
+    "tags": ["time valley", "temple of time", "crystals"]
   },
   {
     "id": 9, "name": "Little Wood dark cultist cave",
     "source": "coords", "coords": "-570, -1352",
     "info": "A dark cultist cave. A miniboss called the Temporal Horror spawns here and drops dark aura which you need for the dark mask you can get at the ravine village.",
-    "tags": ["little_wood", "cultists", "cave"]
+    "tags": ["little wood", "cultists", "cave"]
   },
   {
     "id": 10, "name": "abandoned Corkus sewers",
@@ -76,13 +76,13 @@
     "id": 13, "name": "Ocean coast dark knight cave",
     "source": "coords", "coords": "-2085 -1885",
     "info": "Cave full of Dark Knights and Dark Archers",
-    "tags": ["ocean_coast", "cave"]
+    "tags": ["ocean coast", "cave"]
   },
   {
     "id": 14, "name": "Ocean coast Castaway mercenary settlement",
     "source": "coords", "coords": " -2130 -2325",
     "info": "Small settlement of \"Castaway Mercenaries\"",
-    "tags": ["ocean_coast", "settlement", "mercenaries"]
+    "tags": ["ocean coast", "settlement", "mercenaries"]
   },
   {
     "id": 15, "name": "Desert Sandstorm Vandals hideout",
@@ -99,57 +99,57 @@
   {
     "id": 17, "name": "Ruined Olmic City curious starers cave",
     "source": "coords", "coords": "490 -325",
-    "info": "a small cave / hole above some ruins behind the ruined olmic city, when you enter your character will be frozen and a group of curious starrers will appear and encircle you, after a few seconds you will be teleported in a secret cave above the first one with 3 tier; <b>BUGGED<b>",
-    "tags": ["ruined_olmic_city", "cave", "olm", "curious_starres"]
+    "info": "a small cave / hole above some ruins behind the ruined olmic city, when you enter your character will be frozen and a group of curious starers will appear and encircle you, after a few seconds you will be teleported in a secret cave above the first one with 3 tier; <b>BUGGED<b>",
+    "tags": ["ruined olmic city", "cave", "olm", "curious stares"]
   },
   {
     "id": 18, "name": "Ruined Olmic City underground",
     "source": "coords<br>(entrance)", "coords": "510 -475",
     "info": "Medium size underground below one of the building. Contains 3 cells. Dern influence clearly visible",
-    "tags": ["ruined_olmic_city", "olm", "underground"]
+    "tags": ["ruined olmic city", "olm", "underground"]
   },
   {
     "id": 19, "name": "Ruined Olmic City temple side",
     "source": "coords (entrance)<br>tunnel at 425 -630", "coords": "525 -630",
     "info": "Massive building inside the mountain. There is tunnel with fallen ceiling",
-    "tags": ["ruined_olmic_city", "olm", "underground"]
+    "tags": ["ruined olmic city", "olm", "underground"]
   },
   {
     "id": 20, "name": "Ruined Olmic City underground altar",
     "source": "coords<br>entrance at 667 -605", "coords": "676 -613",
     "info": "Small underground altar",
-    "tags": ["ruined_olmic_city", "olm", "underground", "altar"]
+    "tags": ["ruined olmic city", "olm", "underground", "altar"]
   },
   {
     "id": 21, "name": "Avos territory giant eggs",
     "source": "coords", "coords": "-1691 162 -3365",
     "info": "Three massive eggs in a large nest on a hillside",
-    "tags": ["avos_territory", "eggs", "nest"]
+    "tags": ["avos territory", "eggs", "nest"]
   },
   {
     "id": 22, "name": "Avos territory bloody cave",
     "source": "coords", "coords": "-1740 -3320",
     "info": "A large cave full of blood and skulls in Avos territory",
-    "tags": ["avos_territory", "cave", "blood"]
+    "tags": ["avos territory", "cave", "blood"]
   },
 
   {
     "id": 23, "name": "Avos territory large bloody cave",
     "source": "coords", "coords": "-1957 120 -3297",
     "info": "You can enter this cave by falling through a large hole in a house above it. There also exists a side entrance. The cave is full of blood and flesh.",
-    "tags": ["avos_territory", "cave", "blood"]
+    "tags": ["avos territory", "cave", "blood"]
   },
   {
     "id": 24, "name": "Avos territory ancient ruins under Uth Shrine",
     "source": "coords<br>entrance at -1972 80 -3282", "coords": "-1895 77 -3259",
     "info": "Old stone brick ruins and archways directly under the Uth shrine. New, wooden scaffolding is found nearby, with a campsite closer to the cave's entrance full of mechs.",
-    "tags": ["avos_territory", "cave", "ruin", "uth_shrine"]
+    "tags": ["avos territory", "cave", "ruin", "uth shrine"]
   },
   {
     "id": 25, "name": "Avos territory cage cave",
     "source": "coords", "coords": "-1867 77 -3173",
     "info": "A large, open cave with many cages hanging from the ceiling. There are spikes, skulls and blood around the area. The entrance is guarded by a row of Avos warriors. Looking at the structure, it seems that when the prisoners die, the floors of the cages are opened, and the bodies are left in piles under the cages.",
-    "tags": ["avos_territory", "cave", "cage"]
+    "tags": ["avos territory", "cave", "cage"]
   },
   {
     "id": 26, "name": "CotL abandoned tower",
@@ -158,22 +158,22 @@
     "tags": ["cotl", "tower"]
   },
   {
-    "id": 27, "name": "CotL Bantisu Air Temple beehive",
+    "id": 27, "name": "CotL Bantishu Air Temple beehive",
     "source": "coords", "coords": "489 -4690",
     "info": "Beehive in Bantishu Air temple",
-    "tags": ["cotl", "bantishu_air_temple", "beehive"]
+    "tags": ["cotl", "bantishu air temple", "beehive"]
   },
   {
     "id": 28, "name": "CotL Bantishu Temple cave tree",
     "source": "coords<br>entrance at 495 -4688", "coords": "475 -4735",
     "info": "A large tree in massive cave in the Bantishu Air Temple",
-    "tags": ["cotl", "bantishu_air_temple", "cave", "tree"]
+    "tags": ["cotl", "bantishu air temple", "cave", "tree"]
   },
   {
     "id": 29, "name": "CotL Bantishu Air Temple passage",
     "source": "coords<br>(entrance)", "coords": "577 -4816",
     "info": "Big passage from the air temple into the canyons",
-    "tags": ["cotl", "bantishu_air_temple", "passage"]
+    "tags": ["cotl", "bantishu air temple", "passage"]
   },
   {
     "id": 30, "name": "CotL mining site",
@@ -197,31 +197,31 @@
     "id": 33, "name": "Abandoned Mines mountains camp",
     "source": "coords<br>up in the mountains", "coords": "868 -1223",
     "info": "Small abandoned camp in the mountains",
-    "tags": ["wynn", "abandoned_mines", "mountains", "camp", "abandoned"]
+    "tags": ["wynn", "abandoned mines", "mountains", "camp", "abandoned"]
   },
   {
     "id": 34, "name": "Corrupted Village ruined houses",
     "source": "coords<br>up in the mountains", "coords": "280 -1035",
     "info": "3 small ruined houses near Corrupted Village",
-    "tags": ["wynn", "corrupted_village", "mountains", "ruin", "house"]
+    "tags": ["wynn", "corrupted village", "mountains", "ruin", "house"]
   },
   {
     "id": 35, "name": "Ruined Olmic City altar",
     "source": "coords", "coords": "514 99 -422",
     "info": "What looks to be a withered skull behind bars, maybe a prison, which what looks like a key holder to open the doors",
-    "tags": ["ruined_olmic_city", "altar"]
+    "tags": ["ruined olmic city", "altar"]
   },
   {
-    "id": 36, "name": "SE curious starrers area (TOR quest)",
+    "id": 36, "name": "SE curious starers area (TOR quest)",
     "source": "coords<br>entrance at 695 -550", "coords": "742 83 -581",
-    "info": " When you walk up into the little hole in the wall three curious starrers will apear behind you for only a seccond. Strange how this occurrence happened elsewhere",
-    "tags": ["ruined_olmic_city", "olm", "curious_starrers"]
+    "info": " When you walk up into the little hole in the wall three curious starers will appear behind you for only a seccond. Strange how this occurrence happened elsewhere",
+    "tags": ["ruined olmic city", "olm", "curious starers"]
   },
   {
     "id": 37, "name": "SE withered flower",
     "source": "coords<br>entrance at 650 -805", "coords": "638 84 -814",
     "info": "What looks to be a withered flower in a cave. Its the only flower there",
-    "tags": ["se", "abandoned_mines_se"]
+    "tags": ["se", "abandoned mines se"]
   },
   {
     "id": 38, "name": "SE darkness spikes with red substance",
@@ -233,7 +233,7 @@
     "id": 39, "name": "Mesa village burned down",
     "source": "coords<br>up in the mountains", "coords": "1345 -1220",
     "info": "Small settlement burnt down",
-    "tags": ["mesa", "settelemnt", "burned"]
+    "tags": ["mesa", "settlement", "burned"]
   },
   {
     "id": 40, "name": "Mesa mountains small settlement",
@@ -251,7 +251,7 @@
     "id": 42, "name": "Mesa mountains abandoned mining site",
     "source": "coords<br>in the mountains", "coords": "1485 -1520",
     "info": "Abandoned mining site in the mountains of mesa",
-    "tags": ["mesa", "mountains", "abandoned", "mining_site"]
+    "tags": ["mesa", "mountains", "abandoned", "mining site"]
   },
   {
     "id": 43, "name": "Mesa mountains exiled tribe members camp",
@@ -275,13 +275,13 @@
     "id": 46, "name": "Ice Canyon Ohms grave",
     "source": "coords<br>in the mountains", "coords": "-130 93 -280",
     "info": "Grave of Ohms (NOT Olm). It used to open by throwing 'mechanical key' in a hopper (white carpet), not non-functional<br>UPDATE: it can be opened by throwing hp pot into the hopper. KEy can be obtained by killing golems below",
-    "tags": ["ice_canyon", "ohm", "grave", "broken"]
+    "tags": ["ice canyon", "ohm", "grave", "broken"]
   },
   {
     "id": 47, "name": "Ruined Olmic City entrance TOR quest cave",
     "source": "coords", "coords": "696 -532",
     "info": "Entrance to quest area (The Olmic Rune). Has 2 statues with swords with them",
-    "tags": ["ruined_olmic_city", "statues"]
+    "tags": ["ruined olmic city", "statues"]
   },
   {
     "id": 48, "name": "CotL hidden grave",
@@ -299,7 +299,7 @@
     "id": 50, "name": "CotL freed soul outlook",
     "source": "entrance at 440 -5170", "coords": "435 -5150",
     "info": "cave with bugbear leading to outlook with one freed soul mob",
-    "tags": ["cotl", "bugbear", "cave", "unique_mob", "soul"]
+    "tags": ["cotl", "bugbear", "cave", "unique mob", "soul"]
   },
   {
     "id": 51, "name": "CotL bugbear wall cave",
@@ -311,12 +311,12 @@
     "id": 52, "name": "CotL deserter pit",
     "source": "coords", "coords": "500 -5300",
     "info": "pit with deserters and T4 loot chest, must be traversed to escape",
-    "tags": ["cotl", "cave", "deserter", "pit", "loot_chest", "humans"]
+    "tags": ["cotl", "cave", "deserter", "pit", "loot chest", "humans"]
   },
   {
     "id": 53, "name": "Ocean deserted farm islands",
     "source": "East of Corkus island, near Zhight island and Pirate Cove", "coords": "-910, -2865",
-    "info": "A group of small islands with deserted farm ruins. Agressive mobs called 'Squid Vicious' spawn in the middle",
+    "info": "A group of small islands with deserted farm ruins. Aggressive mobs called 'Squid Vicious' spawn in the middle",
     "tags": ["ocean", "farm", "island", "ruins", "squid"]
   },
   {
@@ -341,7 +341,7 @@
     "id": 57, "name": "ocean raised wooden platform 3",
     "source": "Near Gavel coastline", "coords": "629, -4105",
     "info": "An overgrown wooden plateau in the middle of an ocean, with blue banners on it. Similar platforms are found southwest near the Avos territory and in the middle of the ocean.",
-    "tags": ["ocean","overgrown","platform","gavel","coastline","gavel_coastline"]
+    "tags": ["ocean","overgrown","platform","gavel","coastline","gavel coastline"]
   },
   {
     "id": 58, "name": "ocean shipwrecked man camp",
