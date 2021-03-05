@@ -301,10 +301,40 @@
     "tags": ["ocean","overgrown","platform","gavel","coastline","gavel coastline"]
   },
   {
+  "name": "ocean raised wooden platform 4",
+  "location": "Near Gavel coastline", "coords": "176 -2611",
+  "info": "An overgrown wooden plateau on the Underwater Route, this time without a roof. Similar platforms are found southwest near the Avos territory, near Gavel coast and in the middle of the ocean.",
+  "tags": ["ocean","overgrown","platform","underwater_route"]
+  },
+  {
+  "name": "ocean raised wooden platform 5",
+  "location": "Near Selchar", "coords": "-255 -3048",
+  "info": "An overgrown wooden plateau near Selchar with red banners on it. Similar platforms are found southwest near the Avos territory, near Gavel coast, on the Underwater Route and in the middle of the ocean.",
+  "tags": ["ocean","overgrown","platform"]
+  },
+  {
     "name": "ocean shipwrecked man camp",
     "source": "Southwest of Selchar", "coords": "-30, -2850",
     "info": "A camp with shipwrecked men, a tent, and a cooking pot",
     "tags": ["ocean", "selchar", "shipwreck", "camp"]
+  },
+  {
+  "name": "ocean beehive on a ship",
+  "location": "Near Corkus", "coords": "-1141 -3056",
+  "info": "Beehive on a ship near Corkus, there is a loot chest above it.",
+  "tags": ["ocean", "beehive", "corkus"]
+  },
+  {
+  "name": "ocean border cave with pink and green crystals",
+  "location": "Near Half-Moon Island", "coords": "1399  -2488",
+  "info": "A cave near the Talking Mushroom signs in the ocean. Inside is a pink crystal and a few green crystals.<br>There are also ruins inside, similar in architectural style to the Olmic ruins.",
+  "tags": ["ocean","half_moon_island","crystal","cave","ruins"]
+  },
+  {
+  "name": "ragni penisula stone structure",
+  "source": "coords", "coords": "-2085 -1885",
+  "info": "A small structurewith a cave full of pirates",
+  "tags": ["ragni penisula", "pirate", "cave"]
   },
 
 
