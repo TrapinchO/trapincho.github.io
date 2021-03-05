@@ -10,7 +10,7 @@ $.getJSON( "wynn_lore.json", function( json ) {
 * Function for page initialisation
 */
 function init() {
-    console.log('Page loaded on version 1.9.1');
+    console.log('Page loaded on version 1.9.2');
     resetPage();
 }
 
@@ -29,8 +29,8 @@ function searchEntries() {
         document.getElementById('found').innerHTML = "Id cannot be lower than 1";
         return;
     }
-    else if (search_id > lore.length) {
-        document.getElementById('found').innerHTML = "Id cannot be higher than " + lore.length;
+    else if (search_id > lore.length-1) {
+        document.getElementById('found').innerHTML = "Id cannot be higher than " + lore.length-1;
         return;
     }
     // search by name
@@ -186,7 +186,7 @@ function addRowToTable(info) {
 
     let rowCount = table.rows.length;
     let row = table.insertRow(rowCount);
-    row.insertCell(0).innerHTML = info["id"];
+    row.insertCell(0).innerHTML = lore.indexOf(info)+1;
     row.insertCell(1).innerHTML = info["name"];
     row.insertCell(2).innerHTML = info["source"];
     row.insertCell(3).innerHTML = info["coords"];
