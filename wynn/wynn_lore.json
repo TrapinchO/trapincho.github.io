@@ -237,7 +237,7 @@
   {
     "name": "Ice Canyon Ohms grave",
     "source": "coords<br>in the mountains", "coords": "-130 93 -280",
-    "info": "Grave of Ohms (NOT Olm). It used to open by throwing 'mechanical key' in a hopper (white carpet), not non-functional<br>UPDATE: it can be opened by throwing hp pot into the hopper. KEy can be obtained by killing golems below",
+    "info": "Grave of Ohms (NOT Olm). It used to open by throwing 'mechanical key' in a hopper (white carpet), not non-functional<br>It can be opened by throwing hp pot into the hopper. Key can be obtained by killing golems below",
     "tags": ["ice canyon", "ohm", "grave", "broken"]
   },
   {
