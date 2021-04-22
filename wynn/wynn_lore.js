@@ -10,7 +10,7 @@ $.getJSON( "wynn_lore.json", function( json ) {
 * Function for page initialisation
 */
 function init() {
-    console.log('Page loaded on version 1.9.2');
+    console.log('Page loaded on version 1.9.3');
     resetPage();
 }
 
