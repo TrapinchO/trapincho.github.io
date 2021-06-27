@@ -1,10 +1,19 @@
 [
   {
+<<<<<<< HEAD
     "name": "The Goliaths and the Colossi's True Nature",
     "author": "Matteo_Games",
     "link": "https://forums.wynncraft.com/threads/the-goliaths-and-the-colossis-true-nature.289141/",
     "update": "1.20",
     "date": "March 29th, 2021",
     "topics": ["Goliaths", "Colossi", "Runes", "Villagers", "Ahms"]
+=======
+    "name": "I serve Corruption",
+    "author": "me",
+    "link": "some link",
+    "update": "0.0",
+    "date": "1st January 1970",
+    "topics": ["test", "u", "Corruption"]
+>>>>>>> parent of a03f170 (wynn/wynn_theory.json: Added actual entry)
   }
 ]
